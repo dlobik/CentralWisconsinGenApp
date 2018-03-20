@@ -1,7 +1,6 @@
 CREATE TABLE [dbo].[Obituaries] (
 	[OB_ID] [int] NOT NULL,
 	[First_Name] [varchar](50) NOT NULL,
-	[Middle_Name] [varchar](20) NULL,
 	[Last_Name] [varchar](50) NOT NULL,
 	[Alt_Name] [varchar](50) NULL,
 	[Date_Of_Record] [datetime] NOT NULL,
@@ -16,7 +15,6 @@ GO
 CREATE TABLE [dbo].[Naturalization] (
 	[NAT_ID] [int] NOT NULL,
 	[First_Name] [varchar] (50) NOT NULL ,
-	[Middle_Name] [varchar] (50),
 	[Last_Name] [varchar] (50) NOT NULL ,
 	[DOB] [varchar] (10) NULL ,
 	[AGE] [int] NULL,
@@ -38,7 +36,6 @@ GO
 CREATE TABLE [dbo].[Census] (
 	[CEN_ID] [int] NOT NULL,
 	[First_Name] [varchar](50) NOT NULL,
-	[Middle_Name] [varchar](20) NULL,
 	[Last_Name] [varchar](50) NOT NULL,
 	[AGE] [int] NOT NULL,
 [Date_Of_Record] [datetime] NOT NULL,
