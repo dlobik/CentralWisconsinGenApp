@@ -18,8 +18,8 @@ CREATE TABLE [dbo].[Naturalization] (
 	[Last_Name] [varchar] (50) NOT NULL ,
 	[DOB] [varchar] (10) NULL ,
 	[AGE] [int] NULL,
-	[Date_of_Record] [datetime] NOT NULL,
-	[Location] [varchar] (50) NOT NULL,
+	[Date_Filed] [datetime] NOT NULL,
+	[Record_Type] [varchar] (50) NOT NULL,
 	[Country_of_Origin] [varchar] (50) NOT NULL,
 	[Series] [int] NOT NULL,
 	[Box] [int] NOT NULL,
@@ -28,7 +28,7 @@ CREATE TABLE [dbo].[Naturalization] (
 	[Page_Cert_Num] [varchar] (50) NOT NULL,
 	[Date_of_Entry] [varchar] (50) NOT NULL,
 	[Port_of_Entry] [varchar] (50) NOT NULL,
-[COUNTY_ID] [int] NOT NULL
+	[COUNTY_ID] [int] NOT NULL
 ) ON [PRIMARY]
 GO
 
@@ -38,7 +38,7 @@ CREATE TABLE [dbo].[Census] (
 	[First_Name] [varchar](50) NOT NULL,
 	[Last_Name] [varchar](50) NOT NULL,
 	[AGE] [int] NOT NULL,
-[Date_Of_Record] [datetime] NOT NULL,
+	[Date_Of_Record] [datetime] NOT NULL,
 	[Page] [varchar](5) NOT NULL,
 	[Town] [varchar](50) NOT NULL,
 	[COUNTY_ID] [int] NOT NULL
