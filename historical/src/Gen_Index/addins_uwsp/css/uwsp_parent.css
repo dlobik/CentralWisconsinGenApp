@@ -1,0 +1,211 @@
+﻿/* uwsp_parent.css
+	--------------------------------
+	Defines styles for the uwsp_parent.master 
+    Look based on the www.uwsp.edu SharePoint master page v5	
+*/
+
+/***** General Styles ****************************************************/
+* {
+	margin: 0;
+	padding: 0;
+    border: none;
+	/*outline: 0;*/
+}
+
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    /*font-size: 8pt;*/
+    /*color: #2F2F2F;*/
+    height: 100%;
+    width: 100%;
+    background-color: #bdbdbd;
+    background-image: url('../../addins_uwsp/images/containerBGgradient.png'); /*#adaab3 url( "../../images/v5/uwspBG.jpg")*/
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+
+form {
+    height: 100%;
+}
+
+
+a:link {
+    color:#903CD6;
+    text-decoration:none;
+}
+
+a:visited {
+    color:#84779D;
+    text-decoration:none;
+}
+
+a:-webkit-any-link {
+    cursor: auto;
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+    width: 735px;
+}
+
+
+/***** Parent Master Styles ****************************************************/
+
+#uwspBarContainer {
+    background: #623f99;
+    border-top: 3px solid #ffc82e;
+    height: 107px;
+    width: 100%
+}
+
+#uwspBar {
+    background: none;
+    margin: auto;
+    width: 960px;
+}
+
+#brandingLogo {
+	position: relative;
+	float: left;
+	width: 271px;
+	height: 72px;
+	margin-top: 3px;
+	/*margin-left: 300px;*/
+	padding: 2px 0;
+
+}
+/* Yellow Links */
+
+#resourcesNav {
+	position: relative;
+	float: left;
+	width: 489px;
+	height: 72px;
+	margin-top: 3px;
+	padding: 2px 0;
+    font-size: 0.7em;
+ 
+}
+
+#resourcesNav ul {
+	position: relative;
+	float: right;
+	margin-right: 31px;
+	list-style-type: none;
+	margin-top: 33px;
+}
+
+#resourcesNav ul li {
+	position: relative;
+	float: left;
+	padding: 0 5px;
+	border-right: 2px solid #FAC924;
+	/*height: 14px;*/
+}
+
+#resourcesNav ul li.lastItem {
+	border: 0;
+}
+
+#resourcesNav ul li a, #resourcesNav ul li a:link, #resourcesNav ul li a:visited {
+	display: block;
+	color: #FAC924;
+	text-decoration: none;
+	font-weight: bold;
+	/*line-height: 14px;*/
+}
+
+#resourcesNav ul li a:hover, #globalNav ul li a:active {
+	text-decoration: underline;
+}
+
+/* Search Box */
+
+#uwspSearch {
+	position: relative;
+	float: left;
+	width: 200px;
+	/*height: 65px;*/
+	margin-top: 25px;
+	padding: 2px 0;
+}
+
+#uwspSearch .sbinput {
+    padding-right: 5px;
+}
+
+.inputWrapper {
+    border-radius: 3px 3px 3px 3px; 
+}
+
+.inputText {
+    font-size: 0.8em;
+    font-style: normal;
+    border: 1px #000000 !important;
+    border-style: solid;
+    width: 150px !important;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+    margin: 1px 5px 0px 0px !important;
+    padding: 4px 2px 2px 9px;
+    height: 1.3em;
+}
+
+
+/*
+input:focus {
+    border: 1px #ffc82e !important;
+    border-style: solid;
+}*/
+
+
+/****** University Nav ********************************************************/
+#universityNav {
+	background: #410080;
+	display:	block;
+	clear:		both;
+	width:		100%;
+}
+
+#universityNav ul {
+	font-size:	0.8em;
+	font-weight: bold;
+	line-height: 28px;
+	list-style:	none;
+	margin:		0 auto;
+	max-width:	960px;
+	padding:	0;
+	text-align:	center;
+	width:		100%;
+    list-style-type:none;
+}
+
+#universityNav li 
+{
+    display: inline;
+}
+
+#universityNav a
+{
+    display:inline-block;
+    color: #fff;
+    padding: 0;
+    width: 16%;
+    height: 28px;
+}
+
+/*#universityNav li a {*/
+	/*color:		#fff;*/
+	/*display:	inline-block;*/
+	/*display:	inline;*/
+	/*height:		28px;*/
+	/*width:		16%;*/
+/*}*/
+
+#universityNav li a:hover {
+	background:#623f99;
+}
+
+/*#universityNav li a:hover { background:#623f99; }*/

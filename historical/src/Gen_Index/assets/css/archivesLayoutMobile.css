@@ -1,0 +1,119 @@
+﻿/*   * * * * * * * * * * * * * * * * * * * * * 0 - 500 * * * * * * * * * * * * * * * * * * * * *   */
+
+@media only screen 
+and (max-width : 767px) {
+
+#homeInfo {
+	width: 70%;
+	margin-left: 15%;
+}
+#homeInfo2 {
+	float: left;
+	clear: left;
+	width: 70%;
+	margin-left: 15%;
+	margin-top: 15px;
+}
+#homeContent img {
+	max-width: 40%;
+}
+
+
+
+img.centralWI {
+	margin: 10px 20px 10px 10px !important;
+	max-width: 35% !important;
+	width: 35% !important;
+}
+
+img.centralWI {
+	margin: 10px 20px 10px 10px !important;
+	max-width: 35% !important;
+	width: 35% !important;
+}
+
+
+
+#uwspNewspaperList li {
+	width: 45%;
+	padding: 7px 0 7px 5% !important;	
+	background-position: 19% 50%;
+	font-size: 1.4em;
+	text-align: center;
+}
+#uwspNewspaperList li:nth-child(2n+1) ul {
+	left: 0;
+	width: 200%;
+}
+
+#uwspNewspaperList li:nth-child(2n+2) ul {
+	left: -100%;
+	width: 200%;
+}
+#uwspNewspaperList li ul li {
+	width: 39% !important;
+	background-image: none;
+	padding: 2% 4% 2% 7% !important;
+	background-image: url('http://www.uwsp.edu/library/archives/SiteAssets/images/bullet.png');
+	background-position: 19% 50%;
+	background-repeat: no-repeat;
+	font-size: 0.9em;
+}
+#uwspNewspaperList li:nth-child(n+60) ul {
+	bottom: 39px;
+}
+#siteNav {
+	z-index: 99999 !important;
+}	
+
+}
+
+
+@media only screen 
+and (max-width : 650px) {
+
+
+td.ms-WPHeaderTd {
+	display: block;
+	position: relative;
+	background-image: none;
+	height: auto;
+	min-height: 29px;
+	overflow: auto;
+	cursor: default !important;
+}
+
+td.ms-WPHeaderTd h3.ms-WPTitle {
+	display: block;
+	position: relative;
+	margin-right: 21px;
+	background-image: none;
+	background-color: #FAC924;
+	height: auto;
+	padding: 0 !important;
+	padding-right: 10px !important;
+	cursor: default !important;
+	border: 3px solid #E6B206;
+	min-height: 29px;
+	overflow: auto;
+
+}
+
+td.ms-WPHeaderTd h3.ms-WPTitle nobr {
+	display: block;
+	position: relative;
+	margin-left: 7px;
+	background-image: url('/library/archives/SiteAssets/images/arrowUp.png');
+	background-repeat: no-repeat;
+	background-position: left 11px;
+	height: auto;
+	min-height: 29px;
+	overflow: auto;
+	line-height: 30px;
+	padding-left: 15px;
+	cursor: default !important;
+}
+
+
+}
+

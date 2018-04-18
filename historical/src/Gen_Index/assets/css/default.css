@@ -1,0 +1,382 @@
+﻿.txtBox {
+    border: 1px solid #000000;
+    margin-top: 1px;
+        margin-bottom: 1px;
+        padding: 2px;
+        font-size: 14px;
+    /* #DADADA;*/
+    width: 126px;
+}
+
+#bodyinfo {
+	color: #330066;
+    line-height: 110%;
+}
+
+.hiddenbtn { display:none }
+
+/*Modal Popup*/
+.modalBackground {
+	background-color:Gray;
+	filter:alpha(opacity=70);
+	opacity:0.7;	
+}
+
+.modalPopup {
+	background-color:#ffffdd;
+	border-width:3px;
+	border-style:solid;
+	border-color:Gray;
+	padding:3px;
+	width:600px;
+    
+}
+
+.ClassHeading { font-size: 14pt; font-weight:bold; } 
+
+.style1 {
+    height: 40px;
+ }
+ 
+ /*Library Footer*/
+.Lib_footer 
+{
+    /*line-height:8pt;*/
+      font-size: smaller; /*0.8em;*/
+}
+
+td {
+    padding: 4px;
+}
+
+.btnBox {
+    border-color: #512698;/* #000000;  #DADADA;*/
+    border-style: solid;
+    border-width: 1px;
+    padding: 2px;
+    font-weight: bold;
+    font-family: Verdana;
+    font-size: 9pt;
+    color: #512698;
+    background-color: #fffec8;
+}
+
+.btnBox:hover {
+    border-color: #512698;/* #000000;  #DADADA;*/
+    border-style: solid;
+    border-width: 1px;
+    padding: 2px;
+    font-weight: bold;
+    font-family: Verdana;
+    font-size: 9pt;
+    color: #512698;
+    background-color: #d5d3e9;
+    
+}
+
+.centerDiv {
+    margin-left:auto;
+    margin-right:auto;
+    width: 100%;
+}
+
+.tosTitle1 {
+    font-weight: bold;
+    font-family: Verdana;
+    font-size: 14pt;
+    text-align: center;
+}
+
+.tosTitle2 {
+    font-weight: bold;
+    font-family: Verdana;
+    font-size: 12pt;
+    text-align: center;
+    height: 19px;
+    width: 741px;
+}
+
+.tosTitle3 {
+    font-weight: bold;
+    font-family: Verdana;
+    font-size: 11pt;
+}
+
+#contentContainer p.setFont  {
+    font-family:Verdana;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+#contentContainer div.setFont  {
+    font-family:Verdana;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.setMargin {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.emText {
+    font-weight: 600;
+    color: red;
+}
+
+.indentPara {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#lblError {
+    color: red;
+}
+
+#usernameLabel, #passwordLabel {
+    	color: #330066;
+}
+
+.obaTableCls {
+    border-color: #ffff00;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.obaTableCls2 {
+    border-color: #ffff00; /*#000066;*/
+    border-style: solid;
+    border-width: 2px;
+}
+
+.obaTableCls3 {
+    border-color: #339933;
+    border-style: solid;
+    border-width: 0px;
+}
+
+.dgBtn {
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.gvSearchList {
+    line-height: 100%;
+}
+
+.gvSearchListHeader {
+    padding-left: 4px;
+}
+
+.libfooterTable {
+    width: 100%; 
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.jointProjectsLabelStyle {
+    font-weight: bold;
+    color: #6
+}
+
+.jointProjectsCell {
+    text-align: center;
+}
+
+#contentContainer a.countyMap {
+    text-decoration: underline;
+    color: #512698; /*#007279;*/
+}
+
+#contentContainer a.countyMap:hover {
+    text-decoration: underline;
+    color: #a5a0cf; /*#f15022;*/
+}
+
+.countyDdl {
+    padding: 2px;
+    border-color: #000000; /* #DADADA;*/
+    border-style: solid;
+    border-width: 1px;
+}
+
+.searchLabels {
+    font-weight: bold;
+    margin-left: 60px;
+    color: #512698;
+}
+
+.searchLabels2 {
+    margin-left: 60px;
+    color: #512698;
+}
+
+.ajax__tab_xp .ajax__tab_tab {
+    font-family:verdana,tahoma,helvetica;
+    font-size:13px;
+    font-weight: bold;
+    height: 20px;
+    padding: 8px;
+    color: #512698;
+    }
+.ajax__tab_xp .ajax__tab_body {
+    font-family:verdana,tahoma,helvetica;
+    font-size:13px;
+    border: 1px solid #999999;
+    border-top-width: 0px;
+    border-top-style: solid;
+    border-top-color: #999999;
+    padding: 8px;
+    background-color: #ffffff;
+    width: 730px;
+}
+.ajax__tab_panel {
+    width: 724px;
+}
+
+#navContainer .tabContainer {
+    width: 100%;
+    margin-left:0;
+    margin-right: 0;
+}
+
+/*Modal Popup*/
+.modalBackground {
+	background-color:Gray;
+	filter:alpha(opacity=70);
+	opacity:0.7;	
+}
+
+.modalPopup {
+    background-color: #ffffee; /*#a5a0cf; #ffffdd;*/
+	border-width:3px;
+	border-style:solid;
+	border-color:Gray;
+	padding:3px;
+	width:600px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.pnlShoppingCartTable {
+    	width:100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.shoppingCartDelete {
+    text-decoration: underline;
+}
+
+
+#contentContainer #genIndexNav {
+    background: #ffc82e; /*#007279; #410080;*/
+    display: block;
+    clear: both;
+    width: 100%;
+}
+
+#contentContainer #genIndexNav ul {
+font-size: 0.88em;
+/*font-weight: bold;*/
+line-height: 28px;
+list-style: none;
+margin: 0 auto;
+max-width: 790px;
+padding: 0;
+text-align: center;
+width: 100%;
+list-style-type: none;
+}
+
+#contentContainer #genIndexNav ul li {
+    display: inline;
+    line-height: 28px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#contentContainer #genIndexNav ul li a {
+    display: inline-block;
+    color: #000000; /*#ffffff;*/
+    padding: 0;
+    width: 24%;
+    height: 28px;
+}
+
+#contentContainer #genIndexNav ul li a:hover {
+    background: #ffe49d; /*#82b5ba; #623f99;*/
+}
+
+#contentContainer a.contactUnivArch, #contentContainer a.contactUnivArch:visited {
+    text-decoration: underline;
+    color: rgb(51, 0, 102);
+}
+
+#contentContainer a.contactUnivArch:hover {
+    text-decoration: underline;
+    color: #512698;
+}
+
+.btnBoxAddToOrder:hover {
+    background: #d5d3e9;
+}
+
+.btnBoxViewCart:hover {
+    background: #d5d3e9;
+}
+
+.btnBoxViewCart {
+    border-color: #d5d3e9;/* #000000;  #DADADA;*/
+    border-style: solid;
+    border-width: 1px;
+    padding: 2px;
+    font-weight: bold;
+    font-family: Verdana;
+    font-size: 9pt;
+    color: #512698;
+    background-color: #fffec8;
+    margin-left: 4px;
+}
+
+#mainTable {
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 1px; /* cellspacing */
+}
+
+#mainTable td {
+     padding: 1px; /* cellpadding */
+}
+
+.alignLeft {
+    text-align: left;
+}
+
+ul li {
+  list-style: none !important;
+}
+
+.tabs h1 {
+  margin: 0;
+  font-size: 180%;
+}
+
+.tabs p {
+  font-size: 150%;
+  margin: 5px 0 0;
+}
+
+.tabs img {
+  border: 1px solid #913D00;
+  float: right;
+  margin-left: 10px;
+  width: 200px;
+  height: 150px;
+}
+
+.tabs .shim {
+  clear: both;
+  padding-bottom: 1em;
+}

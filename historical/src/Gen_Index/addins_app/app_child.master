@@ -1,0 +1,106 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="app_child.master.cs" Inherits="addins_app_app_child" MasterPageFile="..\addins_uwsp\uwsp_parent.master" %>
+<%@ MasterType virtualpath="~/addins_uwsp/uwsp_parent.master" %>
+
+<asp:Content id="ChildMasterHead" ContentPlaceHolderID="ContentPlaceHolderChildMasterHead" runat="server">
+    <!-- CSS -->    
+    <link rel="stylesheet" href="addins_app/css/app_child.css" media="screen" type="text/css" />
+
+    <script type="text/javascript">
+         $(document).ready(function(){
+
+         $("#archivesBtn").click(function() {
+         $("#archivesBtn img").toggle();
+         $("#archivesLinks").toggle();
+        });
+
+        $("#archidxsBtn").click(function() {
+        $("#archidxsBtn img").toggle();
+        $("#archidxsLinks").toggle();
+        });
+
+        //expand the menus on page open
+        $("#archivesBtn").click();
+             $("#archidxsBtn").click();
+
+         });
+     </script>
+     
+	<!-- Placeholder for Css, Js, etc. for default page -->
+	<asp:ContentPlaceHolder ID="ContentPlaceHolderDefaultHead" runat="server" />
+</asp:Content>
+
+<asp:Content id="ChildMasterContent" ContentPlaceHolderID="ParentMasterContent" runat="server">
+    <div id="mainContainer">
+	<div id="bannerWrapper">
+		<a href="http://www.uwsp.edu/library/" title="Library Homepage"><img src="addins_app/images/siteBanner.png" alt="University Library - James H. Albertson Center for Learning Resources"></a>
+	</div>
+	
+	<div id="navContainer">
+	<div id="siteNav">
+		<div id="archivesGroup" class="goToggle"><span id="archivesBtn">Archives<img src="addins_app/images/toggleUpBtn.png" alt="Slide Up"><img src="addins_app/images/toggleDownBtn.png" alt="Slide Down"></span>
+			<div id="archivesLinks">
+				<div><a href="http://www.uwsp.edu/library/archives/" title="Home">Home</a></div>
+				<div><a href="http://www.uwsp.edu/library/archives/Pages/digitalCollections.aspx" title="Digital Collections">Digital Collections</a></div>
+				<div><a href="http://www.uwsp.edu/library/archives/Pages/recordsManagement.aspx" title="Records Management">Records Management</a></div>
+				<div><a href="http://www.uwsp.edu/library/archives/Pages/researchGuides.aspx" title="Research Guides">Research Guides</a></div>
+				<div><a href="http://www.uwsp.edu/library/archives/Pages/researchRequests.aspx" title="Research Requests">Research Requests</a></div>
+			</div>
+		</div>
+		<div id="archidxsGroup" class="goToggle"><span id="archidxsBtn">Archives Indexes<img src="addins_app/images/toggleUpBtn.png" alt="Slide Up"><img src="addins_app/images/toggleDownBtn.png" alt="Slide Down"></span>
+			<div id="archidxsLinks" style="display: none;">
+				<div><a href="http://www.uwsp.edu/library/archives/Pages/cemeteryLocator.aspx" title="Cemetery Locator">Cemetery Locator</a></div>
+				<div><a href="http://mypoint.uwsp.edu/Library/gen_index/" title="Central Wisconsin Genealogy Index">Central Wisconsin Genealogy Index</a></div>
+				<div><a href="http://www.uwsp.edu/library/archives/Pages/indexCampusNewspaper.aspx" title="UWSP Campus Newspaper Index">UWSP Campus Newspaper Index</a></div>
+				<div><a href="http://www.uwsp.edu/library/archives/Pages/indexSPJournal.aspx" title="Stevens Point Journal Index">Stevens Point Journal Index</a></div>
+				<div><a href="http://www.uwsp.edu/library/archives/Pages/collectionsIndexes.aspx" title="Select Collection Content &amp; Indexes">Select Collection Content &amp; Indexes</a></div>
+			</div>
+		</div>
+	
+	</div>
+	
+	<div id="contentContainer">
+		 <!-- page content -->
+		    <asp:ContentPlaceHolder id="headerPlaceHolder" runat="server" />
+			<asp:ContentPlaceHolder id="MainContent" runat="server" />
+	</div>
+	
+	</div>
+	
+	<!--
+	<div id="socialMediaIcons">
+	    <div class="socialIcon">
+	     <div class="needs-js">
+	        <div class="libraryh3lp" jid="uwsp-reference@chat.libraryh3lp.com">
+	            <a href="#" onclick="window.open(&quot;https://libraryh3lp.com/chat/uwsp-reference@chat.libraryh3lp.com?skin=18586&amp;identity=operator&quot;, &quot;chat&quot;, &quot;resizable=1,width=320,height=200&quot;); return false;"><img id="chatOnline" alt="Librarians Are Online" src="addins_app/images/Librarians-Online.png" /></a>
+	        </div>
+	        <div class="libraryh3lp" style="display: none;">
+	            <a href="http://www.uwsp.edu/library/Pages/askUs.aspx" title="Ask Us! - Chat Offline"><img src="addins_app/images/Librarians-Offline.png" alt="Librarians Are Offline" id="chatOffline" /></a>
+	       </div>
+	    </div>
+	    </div>
+		<div class="socialIcon"><a href="http://www.uwsp.edu/library/Pages/genHours.aspx" title="Library Hours" target="_blank"><img src="addins_app/images/Hours.png" alt="Hours"></a></div>
+		<div class="socialIcon"><a href="http://uwsplib.blogspot.com/" title="Library Blog" target="_blank"><img src="addins_app/images/Blogger.png" alt="Blogger"></a></div>
+		<div class="socialIcon"><a href="http://www.flickr.com/photos/uwsplibrary" title="Library Photostream" target="_blank"><img src="addins_app/images/Flickr.png" alt="Flickr"></a></div>
+		<div class="socialIcon"><a href="http://www.facebook.com/uwsplibrary" title="Library Page" target="_blank"><img src="addins_app/images/Facebook.png" alt="Facebook"></a></div>
+	   
+	</div>
+	-->
+
+	<div id="footer">	
+		<p>©2014 <a title="University of Wisconsin-Stevens Point home" href="http://www.uwsp.edu/" target="_blank">University of Wisconsin-Stevens Point</a></p>
+		<p><a href="http://www.uwsp.edu/library/archives/Pages/default.aspx" title="Archives &amp; Area Research Center" target="_blank">Archives &amp; Area Research Center</a> at the <a href="http://www.uwsp.edu/library/Pages/default.aspx" title="University Library">University Library</a><br>
+		    520 LRC, 900 Reserve Street Stevens Point, WI 54481-3897<br/>
+	Phone: 715-346-2586 • Email: <a href="mailto:archives@uwsp.edu" title="Email the Archives">archives@uwsp.edu</a></p>
+	<p><a href="http://www.uwsp.edu/library/Pages/siteIndex.aspx" title="Library Site Index" target="_blank">Library Site Index</a> • <a href="http://www.uwsp.edu/library/Pages/accessibility.aspx" title="Library Accessibility Statement" target="_blank">Library Accessibility Statement</a></p>
+	<p id="nonDescLink"><a href="http://www.uwsp.edu/equity/Pages/default.aspx" title="Non-Discrimination Statement">Non-Discrimination Statement</a></p>
+
+		<!--<p><a title="University Library" href="http://www.uwsp.edu/library" target="_blank">University Library</a><br>
+		    900 Reserve Street Stevens Point, WI 54481-3897<br/>
+		Phone: 715-346-2540 • Direct comments to <a href="mailto:libwww@uwsp.edu?subject=Library%20Website%20Comment%20or%20Question">webmaster</a></p>
+		<p><a title="Site Index" href="http://www.uwsp.edu/library/Pages/siteIndex.aspx" target="_blank">Site Index</a> • <a title="Accessibility Statement" href="http://www.uwsp.edu/library/Pages/accessibility.aspx">Accessibility</a></p>
+		<p id="nonDescLink"><a href="http://www.uwsp.edu/equity/Pages/default.aspx" title="Non-Discrimination Statement">Non-Discrimination Statement</a></p>
+		-->
+	</div>
+    </div>
+    
+</asp:Content>

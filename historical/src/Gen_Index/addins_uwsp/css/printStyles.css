@@ -1,0 +1,13 @@
+﻿#uwspBarContainer, #uwspBar, #brandingLogo, #footer, #resourcesNav, #uwspSearch, #universityNav, #raveEmergency, #siteNav, #socialMediaIcons
+{
+	display:	none !important;
+}
+
+#containerBG {
+	width:97%;
+	margin-left:0px;	
+	margin-right:0px;
+	overflow-x:hidden !important;
+	background:#FFFFFF;
+    color: black;
+}

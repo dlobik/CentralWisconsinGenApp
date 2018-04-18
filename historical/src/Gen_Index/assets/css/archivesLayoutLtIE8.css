@@ -1,0 +1,196 @@
+﻿body {
+	min-height: 100%;
+	margin-bottom: 1px;
+}
+
+/*   * * * * * * * * * * * * * * * * * * * * * Archives Layout Tabs * * * * * * * * * * * * * * * * * * * * *   */
+
+td.s4-wpcell-plain {
+	padding: 0 0 15px !important;
+}
+
+tr.ms-WPHeader {
+	height: 29px !important;
+	max-height: 29px !important;
+}
+
+td.ms-WPHeaderTd {
+	display: block;
+	position: relative;
+	background-image: url('/library/archives/SiteAssets/images/curve.png');
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	height: 29px !important;
+	max-height: 29px !important;
+	cursor: default !important;
+}
+
+td.ms-WPHeaderTd h3.ms-WPTitle {
+	display: block;
+	position: relative;
+	margin-right: 21px;
+	background-image: url('/library/archives/SiteAssets/images/sectionTitleBG.png');
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	height: 29px;
+	padding: 0 !important;
+	cursor: default !important;
+}
+
+td.ms-WPHeaderTd h3.ms-WPTitle nobr {
+	display: block;
+	position: relative;
+	margin-left: 7px;
+	background-image: url('/library/archives/SiteAssets/images/arrowUp.png');
+	background-repeat: no-repeat;
+	background-position: left 10px;
+	height: 26px;
+	line-height: 26px;
+	padding-left: 15px;
+	cursor: default !important;
+}
+
+td.ms-WPHeaderTd h3.ms-WPTitle nobr span:hover {
+	cursor: default !important;
+}
+
+#innerContainer div.slider h2.ms-rteElement-H2B, #innerContainer div.slider2 h2.ms-rteElement-H2B {
+	background-color: #E0E1E5;
+	border: 2px solid #C5C7CD;
+
+	line-height: 25px !important;
+	font-size: 1.1em !important;
+	padding-left: 25px !important;
+	padding-right: 10px !important;
+	margin-right: 25px !important;
+	color: #000 !important;
+	background-image: url('/library/archives/SiteAssets/images/arrowUp.png');
+	background-repeat: no-repeat;
+	background-position: 7px 10px;
+}
+
+#innerContainer div.slider h2.ms-rteElement-H2B img, #innerContainer div.slider2 h2.ms-rteElement-H2B img {
+	margin-bottom: -2px !important;
+}
+
+#innerContainer div.slider div, #innerContainer div.slider2 div {
+	margin: 0 50px 0 15px !important;
+	padding: 7px 0;
+}
+
+#innerContainer div.slider h3, #innerContainer div.slider2 h3 {
+	line-height: 1.5em !important;
+}
+
+#innerContainer div.slider div ol li ol, #innerContainer div.slider2 div ol li ol {
+	list-style-type: disc;
+}
+
+#innerContainer div.slider:hover, #innerContainer div.slider h2.ms-rteElement-H2B:hover {
+	cursor: default !important;
+}
+
+
+/*   * * * * * * * * * * * * * * * * * * * * * Pointer Archives * * * * * * * * * * * * * * * * * * * * *   */
+
+
+#uwspNewspaperList {
+	float: left;
+	position: relative;
+	width: 90%;
+	margin: 0 !important;
+	padding: 0 5% !important;
+	list-style-type: none;
+	z-index: 500;
+}
+
+#uwspNewspaperList li {
+	float: left;
+	position: relative;
+	width: 22%;
+	margin: 0 !important;
+	padding: 5px 0 5px 3% !important;	
+	background-image: url('http://www.uwsp.edu/library/archives/SiteAssets/images/plus.png');
+	background-position: 5% 50%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+#uwspNewspaperList li ul {
+	display: none;
+	padding: 0 !important;
+	float: none !important;
+	padding: 0 !important;
+	position: absolute !important;
+	background-color: #FFF !important;
+	list-style-type: none;
+	border: 1px solid #000;
+	padding: 0 !important;
+}
+
+#uwspNewspaperList li.ie8BtmHalf ul {
+	bottom: 25px;
+}
+
+#uwspNewspaperList li.ie8Col1 ul {
+	left: 0 !important;
+	width: 400% !important;
+}
+
+#uwspNewspaperList li.ie8Col2 ul {
+	left: -100% !important;
+	width: 400% !important;
+}
+
+#uwspNewspaperList li.ie8Col3 ul {
+	left: -200% !important;
+	width: 400% !important;
+}
+
+#uwspNewspaperList li.ie8Col4 ul {
+	left: -300% !important;
+	width: 400% !important;
+}
+
+
+#uwspNewspaperList li ul li {
+	float: left;
+	position: relative;
+	width: 17% !important;
+	background-image: none;
+	padding: 2% 4% !important;
+	background-image: url('http://www.uwsp.edu/library/archives/SiteAssets/images/bullet.png');
+	background-position: 5% 50%;
+	background-repeat: no-repeat;
+}
+
+.shownNewsItem {
+	background-color: #FFF !important;
+}
+
+.shownNewsItem2 {
+	background-color: #FFF !important;
+	box-shadow: 0 3px 3px 0 #333;
+}
+
+.shownNewsItem3 {
+	background-color: #FFF !important;
+	box-shadow: 0 3px 3px 0 #333;
+}
+
+ul.hiddenNewsItem {
+	background-color: #999 !important;
+}
+
+#uwspNewspaperList li:hover {
+	background-color: #FFF !important;
+	cursor: pointer;
+}
+
+#holdNumber {
+	display: none;
+}
+
+.contGrow {
+	height: 2200px !important;
+}

@@ -1,0 +1,957 @@
+﻿/*   * * * * * * * * * * * * * * * * * * * * * General Layout * * * * * * * * * * * * * * * * * * * * *   */
+
+body {
+	overflow-x: hidden !important;
+}
+
+.ms-wpContentDivSpace {
+	padding: 0 !important;
+}
+
+#ctl00_PlaceHolderMain_ctl00_ctl00_ctl00_TextField {
+	width: 75% !important;
+}
+
+#innerContainer h1.ms-rteElement-H1, #innerContainer h2.ms-rteElement-H1B,
+#innerContainer h2.ms-rteElement-H2, #innerContainer h2.ms-rteElement-H2B {
+	font-weight: normal;
+}
+
+#innerContainer h3.ms-rteElement-H3, #innerContainer h3.ms-rteElement-H3B {
+	font-size: 1.2em !important;
+
+}
+
+#innerContainer ul, #innerContainer ol{
+	margin-top: inherit;
+}
+
+#innerContainer ul li ul, #innerContainer ol li ol{
+	margin-top: 0;
+}
+
+#innerContainer ul li, #innerContainer ol li {
+	padding-top: 7px !important;
+	line-height: 1.5em !important;
+}
+
+#innerContainer ul li:first-child, #innerContainer ol li:first-child {
+	padding-top: 0 !important;
+}
+
+#innerContainer ul li ul li:first-child, #innerContainer ol li ol li:first-child {
+	padding-top: 7px !important;
+}
+
+#innerContainer p {
+	line-height: 1.5em !important;
+}
+
+#innerContainer a, #innerContainer a:visited {
+	color: #520092 !important;
+}
+
+#innerContainer a:hover, #innerContainer a:active {
+	color: #9D5E00 !important;
+}
+
+#socialMediaIcons {
+	padding-bottom: 0px !important;
+}
+
+.ms-wpadder {
+	height: 300px !important;
+}
+
+blockquote {
+	font-style: italic;
+}
+
+i.reverse {
+	font-style: normal !important;
+}
+
+.uwspFontColorRed {
+	color: #B61D22 !important;
+}
+
+.noListStyle {
+	list-style-type: none !important;
+}
+
+/*   * * * * * * * * * * * * * * * * * * * * * Archives Layout * * * * * * * * * * * * * * * * * * * * *   */
+
+#archivesHolder {
+	position: relative;
+	width: 100%;
+	min-height: 300px;
+}
+
+#archivesTop {
+	float: left;
+	position: relative;
+	width: 100%;
+}
+
+#archivesCenter {
+	float: left;
+	position: relative;
+	width: 100%;
+}
+
+#archivesBottom {
+	float: left;
+	position: relative;
+	width: 100%;
+}
+
+/*   * * * * * * * * * * * * * * * * * * * * * Archives Layout Tabs * * * * * * * * * * * * * * * * * * * * *   */
+
+td.ms-WPHeaderTd {
+	display: block;
+	position: relative;
+	background-image: url('/library/archives/SiteAssets/images/curve.png');
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	height: 29px;
+	cursor: default !important;
+	width: 100% !important;
+}
+
+td.ms-WPHeaderTdMenu {
+	display: none !important;
+}
+
+td.ms-WPHeaderTd h3.ms-WPTitle {
+	display: block;
+	position: relative;
+	margin-right: 21px;
+	background-image: url('/library/archives/SiteAssets/images/sectionTitleBG.png');
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	height: 29px;
+	padding: 0 !important;
+	cursor: default !important;
+}
+
+td.ms-WPHeaderTd h3.ms-WPTitle nobr {
+	display: block;
+	position: relative;
+	margin-left: 7px;
+	background-image: url('/library/archives/SiteAssets/images/arrowUp.png');
+	background-repeat: no-repeat;
+	background-position: left 10px;
+	height: 26px;
+	line-height: 26px;
+	padding-left: 15px;
+	cursor: default !important;
+}
+
+td.ms-WPHeaderTd h3.ms-WPTitle nobr span:hover {
+	cursor: default !important;
+}
+
+#innerContainer div.slider h2.ms-rteElement-H2B, #innerContainer div.slider2 h2.ms-rteElement-H2B {
+	background-color: #E0E1E5;
+	border: 2px solid #C5C7CD;
+
+	line-height: 25px !important;
+	font-size: 1.1em !important;
+	padding-left: 25px !important;
+	padding-right: 10px !important;
+	margin-right: 25px !important;
+	color: #000 !important;
+	background-image: url('/library/archives/SiteAssets/images/arrowUp.png');
+	background-repeat: no-repeat;
+	background-position: 7px 10px;
+}
+
+#innerContainer div.slider h2.ms-rteElement-H2B img, #innerContainer div.slider2 h2.ms-rteElement-H2B img {
+	margin-bottom: -2px !important;
+}
+
+#innerContainer div.slider div, #innerContainer div.slider2 div {
+	margin: 0 50px 0 15px !important;
+	padding: 7px 0;
+}
+
+#innerContainer div.slider h3, #innerContainer div.slider2 h3 {
+	line-height: 1.5em !important;
+}
+
+#innerContainer div.slider div ol li ol, #innerContainer div.slider2 div ol li ol {
+	list-style-type: disc !important;
+}
+
+#innerContainer div.slider2 div ol li, #innerContainer div.slider2 div ul li {
+	padding-top: 7px !important;
+}
+
+#innerContainer div.slider h2.ms-rteElement-H2B:hover {
+	cursor: default !important;
+}
+
+
+/*   * * * * * * * * * * * * * * * * * * * * * Archives Homepage * * * * * * * * * * * * * * * * * * * * *   */
+
+#homeInfo {
+	float: left;
+	position: relative;
+	width: 35%;
+	margin-left: 7%;
+	margin-top: 15px;
+	height: 150px;
+	padding: 10px;
+	background-color: #FFD96E !important;
+	border-radius: 9px;
+	border: 1px solid #4D4D4F;
+}
+
+#homeInfo2 {
+	float: right;
+	position: relative;
+	width: 35%;
+	margin-right: 7%;
+	margin-top: 15px;
+	height: 150px;
+	padding: 10px;
+	background-color: #FFD96E !important;
+	border-radius: 9px;
+	border: 1px solid #4D4D4F;
+}
+
+#homeInfo p {
+	margin: 0 !important;
+	text-align: center;
+}
+
+#homeInfo2 p {
+	margin: 0 !important;
+	line-height: 1.5em !important;
+	text-align: center;
+}
+
+#homeInfo .homeInfoTitle {
+	margin-bottom: 7px !important;
+	font-weight: bold;
+	text-align: left !important;
+}
+
+#homeInfo2 .homeInfoTitle {
+	margin-bottom: 7px !important;
+	font-weight: bold;
+	text-align: left !important;
+}
+
+#homeContent {
+	position: relative;
+	padding: 15px 20px 10px !important;
+}
+
+#homeContent img {
+	float: right;
+	position: relative;
+	margin: 25px 0 10px 10px !important;
+}
+
+
+/*   * * * * * * * * * * * * * * * * * * * * * Archives WI Image * * * * * * * * * * * * * * * * * * * * *   */
+
+img.centralWI {
+	float: right; 
+	position: relative; 
+	margin: 10px 20px 10px 10px !important;
+	width: 155px;
+	height: 165px;
+}
+
+
+/*   * * * * * * * * * * * * * * * * * * * * * Cemetery Locator Form * * * * * * * * * * * * * * * * * * * * *   */
+
+#clSearch {
+	font-size: 1.0em !important;
+	font-family: Verdana, Arial, Helvetica, sans-serif !important;
+	padding: 3px 5px !important;
+	width: 350px;
+	height: 20px;
+	border-top: 1px solid #AAA;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	border-bottom: 1px solid #DDD;
+}
+
+#clSubmit {
+	width: 75px;
+	height: 25px;
+	margin-left: 20px;
+	border-top: 1px solid #DDD;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	border-bottom: 1px solid #AAA;
+}
+
+#clSubmit:hover, #clSubmit:active {
+	border-top: 1px solid #CCC;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	border-bottom: 1px solid #DDD;
+}
+
+/*   * * * * * * * * * * * * * * * * * * * * * Campus Newspaper Form * * * * * * * * * * * * * * * * * * * * *   */
+
+#cnewsTable, #cnewsTable2, #cnewsTable3 {
+	border-spacing: 0 !important;
+	border-collapse: collapse !important;
+	width: 100%;
+}
+
+#cnewsTable td, #cnewsTable3 td {
+	padding: 0 !important;
+}
+
+#cnewsTable {
+	font-size: 1.0em !important;
+	margin: 0 0 20px 0;
+}
+
+#cnewsTable2 {
+	font-size: 0.9em !important;
+	margin: 20px 0;
+}
+
+#cnewsTable2Col1 {
+	text-align: left;
+	vertical-align: bottom;
+	width: 100px;
+	padding: 0 !important;
+}
+
+#cnewsTable2Col2 {
+	text-align: right;
+	vertical-align: bottom;
+	width: 25px;
+	padding: 0 10px 0 0 !important;
+}
+
+#cnewsAnd {
+	margin: 0 !important;
+}
+
+#cnewsTable2Col3 {
+	text-align: left;
+	vertical-align: bottom;
+	width: 110px;
+	padding: 0 !important;
+}
+
+#cnewsTable2Col4 {
+	text-align: right;
+	vertical-align: bottom;
+	width: 25px;
+	padding: 0 10px 0 0 !important;
+}
+
+#cnewsOr {
+	margin: 0 !important;
+}
+
+#cnewsTable2Col5 {
+	text-align: left;
+	vertical-align: bottom;
+	width: 110px;
+	padding: 0 !important;
+}
+
+#cnewsTable2Col6 {
+	text-align: right;
+	vertical-align: bottom;
+	width: 25px;
+	padding: 0 10px 0 0 !important;
+}
+
+#cnewsBrowse {
+	margin: 0 !important;
+}
+
+#cnewsTable2Col7 {
+	text-align: left;
+	vertical-align: bottom;
+	width: 325px;
+	padding: 0 !important;
+}
+
+#cnewsTable3 {
+	margin: 20px 0;
+}
+
+#cnewsSearch {
+	font-size: 1.0em !important;
+	font-family: Verdana, Arial, Helvetica, sans-serif !important;
+	padding: 3px 5px !important;
+	width: 335px;
+	height: 20px;
+	border-top: 1px solid #AAA;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	border-bottom: 1px solid #DDD;
+}
+
+#cnewsSelect {
+	font-family: Verdana, Arial, Helvetica, sans-serif !important;
+	width: 235px;
+	font-size: 1.0em !important;
+	border-top: 1px solid #AAA;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	border-bottom: 1px solid #DDD;
+}
+
+#cnews3 {
+	float: left;
+	position: relative;
+	clear: left;
+	font-weight: bold;
+}
+
+#cnews4 {
+	float: left;
+	position: relative;
+}
+
+#cnews5, #cnews6 {
+	float: left;
+	position: relative;
+}
+
+span.cnewsRed {
+	color: #F00 !important;
+}
+
+#cnews7 {
+	float: left;
+	position: relative;
+	clear: left;
+}
+
+#cnewsSubmit {
+	width: 75px;
+	height: 25px;
+	border-top: 1px solid #DDD;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	border-bottom: 1px solid #AAA;
+}
+
+#cnewsSubmit:hover, #cnewsSubmit:active {
+	border-top: 1px solid #CCC;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	border-bottom: 1px solid #DDD;
+}
+
+#cnews8 {
+	clear: both;
+	position: relative;
+	float: left;
+	width: 750px;
+	height: 100px;
+}
+
+
+
+/*   * * * * * * * * * * * * * * * * * * * * * Stevens Point Journal Form * * * * * * * * * * * * * * * * * * * * *   */
+
+
+#spjTable, #spjTable2, #spjTable3 {
+	border-spacing: 0 !important;
+	border-collapse: collapse !important;
+	width: 100%;
+}
+
+#spjTable td, #spjTable3 td {
+	padding: 0 !important;
+}
+
+#spjTable {
+	font-size: 1.0em !important;
+	margin: 0 0 20px 0;
+}
+
+#spjTable2 {
+	font-size: 0.9em !important;
+	margin: 20px 0;
+}
+
+#spjTable2Col1 {
+	text-align: left;
+	vertical-align: bottom;
+	width: 100px;
+	padding: 0 !important;
+}
+
+#spjTable2Col2 {
+	text-align: right;
+	vertical-align: bottom;
+	width: 25px;
+	padding: 0 10px 0 0 !important;
+}
+
+#spjAnd {
+	margin: 0 !important;
+}
+
+#spjTable2Col3 {
+	text-align: left;
+	vertical-align: bottom;
+	width: 110px;
+	padding: 0 !important;
+}
+
+#spjTable2Col4 {
+	text-align: right;
+	vertical-align: bottom;
+	width: 25px;
+	padding: 0 10px 0 0 !important;
+}
+
+#spjOr {
+	margin: 0 !important;
+}
+
+#spjTable2Col5 {
+	text-align: left;
+	vertical-align: bottom;
+	width: 110px;
+	padding: 0 !important;
+}
+
+#spjTable2Col6 {
+	text-align: right;
+	vertical-align: bottom;
+	width: 25px;
+	padding: 0 10px 0 0 !important;
+}
+
+#spjBrowse {
+	margin: 0 !important;
+}
+
+#spjTable2Col7 {
+	text-align: left;
+	vertical-align: bottom;
+	width: 325px;
+	padding: 0 !important;
+}
+
+#spjTable3 {
+	margin: 20px 0;
+}
+
+#spjSearch {
+	font-size: 1.0em !important;
+	font-family: Verdana, Arial, Helvetica, sans-serif !important;
+	padding: 3px 5px !important;
+	width: 335px;
+	height: 20px;
+	border-top: 1px solid #AAA;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	border-bottom: 1px solid #DDD;
+}
+
+#spjSelect {
+	font-family: Verdana, Arial, Helvetica, sans-serif !important;
+	width: 235px;
+	font-size: 1.0em !important;
+	border-top: 1px solid #AAA;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	border-bottom: 1px solid #DDD;
+}
+
+#spj3 {
+	float: left;
+	position: relative;
+	clear: left;
+	font-weight: bold;
+}
+
+#spj4 {
+	float: left;
+	position: relative;
+}
+
+#spj5, #spj6 {
+	float: left;
+	position: relative;
+}
+
+span.spjRed {
+	color: #F00 !important;
+}
+
+#spj7 {
+	float: left;
+	position: relative;
+	clear: left;
+}
+
+#spjSubmit {
+	width: 75px;
+	height: 25px;
+	border-top: 1px solid #DDD;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	border-bottom: 1px solid #AAA;
+}
+
+#spjSubmit:hover, #spjSubmit:active {
+	border-top: 1px solid #CCC;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+	border-bottom: 1px solid #DDD;
+}
+
+#spj8 {
+	clear: both;
+	position: relative;
+	float: left;
+	width: 750px;
+	height: 100px;
+}
+
+
+
+/*   * * * * * * * * * * * * * * * * * * * * * Digital Collections Table * * * * * * * * * * * * * * * * * * * * *   */
+
+#digCollTable {
+	width: 100%;
+	border-spacing: 0;
+	padding: 0;
+}
+
+#digCollTable tr td {
+	padding: 3px;
+}
+
+#digCollTable tr:nth-child(even) td {
+	padding-left: 39px;
+}
+
+#digCollTable tr td.imgHolder {
+	width: 26px;
+	text-align: right;
+}
+
+/*   * * * * * * * * * * * * * * * * * * * * * Yearbooks Table * * * * * * * * * * * * * * * * * * * * *   */
+
+.yearbooks td {
+	min-height: 25px;
+	padding: 3px 0 !important;
+}
+
+/*   * * * * * * * * * * * * * * * * * * * * * Collections & Indexes List * * * * * * * * * * * * * * * * * * * * *   */
+
+ul.listCI {
+	list-style-image: url('/library/archives/PublishingImages/pdf-icon.png');
+}
+
+/*   * * * * * * * * * * * * * * * * * * * * * Pointer Archives * * * * * * * * * * * * * * * * * * * * *   */
+
+
+#uwspNewspaperList {
+	float: left;
+	position: relative;
+	width: 90%;
+	margin: 0 !important;
+	padding: 0 5% !important;
+	list-style-type: none;
+	z-index: 500;
+}
+
+#uwspNewspaperList li {
+	float: left;
+	position: relative;
+	width: 22%;
+	margin: 0 !important;
+	padding: 5px 0 5px 3% !important;	
+	background-image: url('http://www.uwsp.edu/library/archives/SiteAssets/images/plus.png');
+	background-position: 5% 50%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+#uwspNewspaperList li ul {
+	display: none;
+	padding: 0 !important;
+	float: none !important;
+	padding: 0 !important;
+	position: absolute !important;
+	background-color: #FFF !important;
+	list-style-type: none;
+}
+
+#uwspNewspaperList li:nth-child(4n+1) ul {
+	left: 0;
+	width: 400%;
+}
+
+#uwspNewspaperList li:nth-child(4n+2) ul {
+	left: -100%;
+	width: 400%;
+}
+
+#uwspNewspaperList li:nth-child(4n+3) ul {
+	left: -200%;
+	width: 400%;
+}
+
+#uwspNewspaperList li:nth-child(4n+4) ul {
+	left: -300%;
+	width: 400%;
+}
+
+#uwspNewspaperList li:nth-child(n+60) ul {
+	bottom: 25px;
+}
+
+#uwspNewspaperList li ul li {
+	float: left;
+	position: relative;
+	width: 17% !important;
+	background-image: none;
+	padding: 2% 4% 2% 4% !important;
+	background-image: url('http://www.uwsp.edu/library/archives/SiteAssets/images/bullet.png');
+	background-position: 7% 50%;
+	background-repeat: no-repeat;
+}
+
+.shownNewsItem {
+	background-color: #FFF !important;
+}
+
+.shownNewsItem2 {
+	background-color: #FFF !important;
+	box-shadow: 0 3px 3px 0 #333;
+}
+
+.shownNewsItem3 {
+	background-color: #FFF !important;
+	box-shadow: 0 3px 3px 0 #333;
+}
+
+.hiddenNewsItem {
+	background-color: #999 !important;
+}
+
+#uwspNewspaperList li:hover {
+	background-color: #FFF !important;
+	cursor: pointer;
+}
+
+#holdNumber {
+	display: none;
+}
+
+.contGrow {
+	height: 2200px !important;
+}
+
+
+/*   * * * * * * * * * * * * * * * * * * * * * Photo Galleries * * * * * * * * * * * * * * * * * * * * *   */
+
+#mainStreetHeader {
+	float: right;
+	position: relative;
+	margin: 0 0 10px 10px !important;
+	border: 1px solid #4D4D4F;
+}
+
+#centennialHeader {
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+
+#centennialHeader img {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 100%;
+}
+
+.galleryDivider {
+	margin: 0 auto;
+	padding: 25px 0;
+	clear: both;
+	position: relative;
+	display: block;
+	width: 50%;
+	height: 3px;
+	background-image: url('http://www.uwsp.edu/library/archives/PublishingImages/dividingLines.png');
+	background-repeat: repeat-x;
+	background-position: center center;
+	background-color: transparent;
+}
+
+.galleryTable {
+	display: block;
+	width: 100%;
+}
+
+.galleryTable thead tr th {
+	width: 25%;
+	background-color: #FFF;
+}
+
+.galleryTable tbody tr td {
+	background-color: #FFF;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+.galleryTable tbody tr td.galleryAlignL {
+	text-align: left;
+	padding-left: 1%;
+}
+
+.galleryTable tbody tr td.galleryAlignR {
+	text-align: right;
+	padding-right: 1%;
+}
+
+.galleryTable tbody tr td a img {
+	border: 1px solid #4D4D4F;
+}
+
+/*   * * * * * * * * * * * * * * * * * * * * * Kampenga Bio * * * * * * * * * * * * * * * * * * * * *   */
+
+#kampengaImg {
+	float: left;
+	position: relative;
+	margin: 5px 10px 10px 0 !important;
+	border: 1px solid #4D4D4F;
+}
+
+/*   * * * * * * * * * * * * * * * * * * * * * Censuses * * * * * * * * * * * * * * * * * * * * *   */
+
+#innerContainer div.slider #censusImg1900 {
+	float: right;
+	position: relative;
+	margin: 0 0 10px 10px !important;
+	padding: 0 !important;
+	max-width: 300px !important;
+}
+
+#imgHolder1900 {
+	float: right;
+	position: relative;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+#imgHolder1900 img {
+	margin: 0 0 10px 0 !important;
+	border: 1px solid #4D4D4F;
+}
+
+#txtHolder1900, #txtHolder1900a {
+	float: right;
+	position: relative;
+	padding: 0 !important;
+	margin: 0 !important;
+	text-align: center;
+	font-size: 0.8em;
+}
+
+#tbl1850, #tbl1860, #tbl1870 {
+	border-spacing: 0 !important;
+	border-collapse: separate !important;
+	border: 1px outset #000;
+	width: 75% !important;
+	margin: 0 auto !important;
+	background-color: #FFF !important;
+}
+
+#tbl1850 tr:first-child td, #tbl1860 tr:first-child td, #tbl1870 tr:first-child td {
+	text-align: center !important;
+}
+
+#tbl1850 td, #tbl1860 td, #tbl1870 td {
+	padding: 6px !important;
+	background-color: #FFF !important;
+	border: 1px inset #000 !important;
+}
+
+#tbl1850 td:first-child, #tbl1860 td:first-child, #tbl1870 td:first-child {
+	width: 47% !important;
+}
+
+#tbl1850 td:last-child, #tbl1860 td:last-child, #tbl1870 td:last-child {
+	width: 25% !important;
+}
+
+#tbl1880, #tbl1900 {
+	border-spacing: 0 !important;
+	border-collapse: separate !important;
+	border: 1px outset #000;
+	width: 90% !important;
+	margin: 0 auto !important;
+	background-color: #FFF !important;
+}
+
+#tbl1880 tr:first-child td, #tbl1900 tr:first-child td {
+	text-align: center !important;
+}
+
+#tbl1880 td, #tbl1900 td {
+	padding: 6px !important;
+	background-color: #FFF !important;
+	border: 1px inset #000 !important;
+}
+
+#tbl1880 td:first-child, #tbl1900 td:first-child {
+	width: 38% !important;
+}
+
+#tbl1880 td:last-child, #tbl1900 td:last-child {
+	width: 20% !important;
+}
+
+/*   * * * * * * * * * * * * * * * * * * * * * Course Catalogs * * * * * * * * * * * * * * * * * * * * *   */
+
+
+.catalogTbl {
+	border-spacing: 0 !important;
+	border-collapse: collapse !important;
+}
+
+.catalogTbl td.ccCell1, .catalogTbl td.ccCell2, .catalogTbl td.ccCell3 {
+	padding: 5px 2.5% 5px 0 !important;
+	width: 30.5% !important;
+	max-width: 230px !important;
+}
+
+.catalogTbl td.catalogCoverImg a {
+	text-decoration: none !important;
+}
+
+.catalogTbl td.catalogCoverImg a img {
+	width: 100% !important;
+	max-width: 100% !important;
+	margin: 0 !important;
+}
+
+
+.catalogTbl td.catalogCoverTxt {
+	font-size: 0.9em !important;
+	line-height: 1.2em !important;
+	text-align: center !important;
+}
+
+.catalogTbl td.catalogCoverTxt a span {
+	display: block !important;
+	margin: 5px 0 !important;
+}
+
+
