@@ -4,62 +4,72 @@
     ViewBag.Title = "Index";
 }
 
-<table class="table">
-    <tr>
-        <th>
-            First Name
-            @*@Html.DisplayNameFor(model => model.FirstName)*@
-        </th>
-        <th>
-            Last Name
-            @*@Html.DisplayNameFor(model => model.LastName)*@
-        </th>
-        <th>
-            Age
-            @*@Html.DisplayNameFor(model => model.Age)*@
-        </th>
-        <th>
-            Date of Record
-            @*@Html.DisplayNameFor(model => model.DateOfRecord)*@
-        </th>
-        <th>
-            Page
-            @*@Html.DisplayNameFor(model => model.Page)*@
-        </th>
-        <th>
-            Town
-            @*@Html.DisplayNameFor(model => model.Town)*@
-        </th>
-        <th></th>
-    </tr>
+@foreach (var item in Model)
+{
+    <table class="table">
+        <tr>
+            <td>
+                <table class="table-striped">
+                    <tr>
+                        <td>Last Name:</td>
+                        <td>@item.LastName</td>
+                    </tr>
+                    <tr>
+                        <td>First Name:</td>
+                        <td>@item.FirstName</td>
+                    </tr>
+                    <tr>
+                        <td>Age:</td>
+                        <td>@item.Age</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="table-striped">
+                    <tr>
+                        <td>Date of Record:</td>
+                        <td>@item.DateOfRecord</td>
+                    </tr>
+                    <tr>
+                        <td>County Filed:</td>
+                        <td>@item.CountyID</td>
+                    </tr>
+                    <tr>
+                        <td>City/Town:</td>
+                        <td>@item.Town</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="table-striped">
+                    <tr>
+                        <td>Page:</td>
+                        <td>@item.Page</td>
+                    </tr>
+                    <td>
+                        @using (Html.BeginForm("Details", "Obits", FormMethod.Get))
+                        {
+                            <button type="submit">Other Household Members</button>
+                        }
+                    </td>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.FirstName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.LastName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Age)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DateOfRecord)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Page)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Town)
-        </td>
-        <td>
-            @using (Html.BeginForm("Details", "Obits", FormMethod.Get))
-            {
-                <button type="submit"> Add to Cart</button>
-            }
-        </td>
-    </tr>
+
+
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            @using (Html.BeginForm("Details", "Obits", FormMethod.Get))
+                            {
+                                <button type="submit">Add to Cart</button>
+                            }
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
 }
-
-</table>
