@@ -20,16 +20,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Geneaology DB", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("UWSP Geneaology Index", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Obits", "Index", "Obits")</li>
-                    <li>@Html.ActionLink("Censuses", "Index", "Censuses")</li>
-                    <li>@Html.ActionLink("Naturalizations", "Index", "Naturalizations")</li>
+                    <li>@Html.ActionLink("Search", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Index", "About", "Home")</li>
+                    @*<li>@Html.ActionLink("Contact", "Contact", "Home")</li>*@
                 </ul>
             </div>
         </div>

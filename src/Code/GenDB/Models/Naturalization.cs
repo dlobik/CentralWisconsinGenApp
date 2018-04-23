@@ -15,7 +15,7 @@ namespace GenDB.Models
         public int Age { get; set; }
         [DataType(DataType.Date)]
         public DateTime DateOfRecord { get; set; }
-        public string Location { get; set; }
+        public string RecordType { get; set; }
         public string CountryOfOrigin { get; set; }
         public int Series { get; set; }
         public int Box { get; set; }

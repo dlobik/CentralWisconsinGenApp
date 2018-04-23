@@ -19,22 +19,22 @@ namespace GenDB.Controllers
         // GET: Obits
         public ActionResult Index(string option, string search, int? pageNumber)
         {
-            //if a user choose the radio button option as Obits
-            if (option == "Fname")
-            {
-                //Index action method will return a view with a student records based on what a user specify the value in textbox  
-                return View(db.Obit.Where(x => x.FirstName == search || search == null).ToList().ToPagedList(pageNumber ?? 1, 3));
-            }
-            else if (option == "Lname")
-            {
-                return View(db.Obit.Where(x => x.LastName == search || search == null).ToList().ToPagedList(pageNumber ?? 1, 3));
-            }
-            else
-            {
-                return View(db.Obit.Where(x => x.AltName.StartsWith(search) || search == null).ToList().ToPagedList(pageNumber ?? 1,3));
-            }
+            ////if a user choose the radio button option as Obits
+            //if (option == "Fname")
+            //{
+            //    //Index action method will return a view with a student records based on what a user specify the value in textbox  
+            //    return View(db.Obit.Where(x => x.FirstName == search || search == null).ToList().ToPagedList(pageNumber ?? 1, 3));
+            //}
+            //else if (option == "Lname")
+            //{
+            //    return View(db.Obit.Where(x => x.LastName == search || search == null).ToList().ToPagedList(pageNumber ?? 1, 3));
+            //}
+            //else
+            //{
+            //    return View(db.Obit.Where(x => x.AltName.StartsWith(search) || search == null).ToList().ToPagedList(pageNumber ?? 1,3));
+            //}
 
-            //return View(db.Obit.ToList());
+            return View(db.Obit.ToList());
         }
 
         // GET: Obits/Details/5
