@@ -1,8 +1,49 @@
 ﻿@using GenDB.Models
 
-@model GenDB.Models.County
+@model GenDB.ViewModels.SearchParameters
 
-    @*//implementing search options*@
+    
+
+<h2>UWSP Geneaology Search</h2>
+<br />
+<br />
+    
+    @using (Html.BeginForm("Search", "Home"))
+    {
+        @Html.LabelFor(m => m.FirstName)
+        @Html.TextBoxFor(m => m.FirstName)
+        <br />
+        <br />
+        @Html.LabelFor(m => m.LastName)
+        @Html.TextBoxFor(m => m.LastName)
+        <br />
+        <br />
+        @Html.LabelFor(m => m.AltName)
+        @Html.TextBoxFor(m => m.AltName)
+        <br />
+        <br />
+        @Html.LabelFor(m => m.DateOfRecord)
+        @Html.TextBoxFor(m => m.DateOfRecord)
+        <br />
+        <br />
+        @Html.LabelFor(m => m.County)
+        @Html.TextBoxFor(m => m.County)
+        <br />
+        <br />
+       <button type="submit">Search</button>
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    @**//implementing search options*
     <br />
     <br />
     <b> Search Option: </b>
@@ -14,7 +55,7 @@
     <br />
     <text> First Name: </text> @Html.TextBox("fname")
     <br />
-    @*//Hard coded drop down list for display only, need to pull counties directly from DB*@
+    *//Hard coded drop down list for display only, need to pull counties directly from DB*
     <text> County: </text> @Html.DropDownList("county", new List<SelectListItem>
 
                  {
@@ -28,7 +69,7 @@
     <br />
     <text> Date of Obituary Publication: </text> @Html.TextBox("dateofpub")
     <br />
-    <button type="button" onclick="location.href='@Url.Action("About", "Home")'"> </button>
+    <button type="button" onclick="location.href='@Url.Action("About", "Home")'"> </button>*@
 
 
 
