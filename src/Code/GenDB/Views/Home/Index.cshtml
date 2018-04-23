@@ -1,10 +1,8 @@
 ﻿@using GenDB.Models
 
-@model Obit
+@model GenDB.Models.County
 
-@using (Html.BeginForm())
-{
-    //implementing search options
+    @*//implementing search options*@
     <br />
     <br />
     <b> Search Option: </b>
@@ -16,6 +14,7 @@
     <br />
     <text> First Name: </text> @Html.TextBox("fname")
     <br />
+    @*//Hard coded drop down list for display only, need to pull counties directly from DB*@
     <text> County: </text> @Html.DropDownList("county", new List<SelectListItem>
 
                  {
@@ -29,6 +28,7 @@
     <br />
     <text> Date of Obituary Publication: </text> @Html.TextBox("dateofpub")
     <br />
-    <input id="submit1", type="submit" value="Search" />
+    <button type="button" onclick="location.href='@Url.Action("About", "Home")'"> </button>
 
-}
+
+

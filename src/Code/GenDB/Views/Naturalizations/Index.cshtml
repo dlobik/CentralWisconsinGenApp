@@ -4,64 +4,51 @@
     ViewBag.Title = "Index";
 }
 
+<h2>Naturalizations</h2>
 
 <table class="table">
     <tr>
         <th>
             First Name
-            @*@Html.DisplayNameFor(model => model.FirstName)*@
         </th>
         <th>
            Last Name
-            @*@Html.DisplayNameFor(model => model.LastName)*@
         </th>
         <th>
             DOB
-            @*@Html.DisplayNameFor(model => model.DOB)*@
         </th>
         <th>
             Age
-            @*@Html.DisplayNameFor(model => model.Age)*@
         </th>
         <th>
             Date of Record
-            @*@Html.DisplayNameFor(model => model.DateOfRecord)*@
         </th>
         <th>
-            Location
-            @*@Html.DisplayNameFor(model => model.Location)*@
+            Record Type
         </th>
         <th>
             Country of Origin
-            @*@Html.DisplayNameFor(model => model.CountryOfOrigin)*@
         </th>
         <th>
             Series
-            @*@Html.DisplayNameFor(model => model.Series)*@
         </th>
         <th>
             Box
-            @*@Html.DisplayNameFor(model => model.Box)*@
         </th>
         <th>
             Folder
-            @*@Html.DisplayNameFor(model => model.Folder)*@
         </th>
         <th>
             Volume Number
-            @*@Html.DisplayNameFor(model => model.VolNumber)*@
         </th>
         <th>
             Page Cert Number
-            @*@Html.DisplayNameFor(model => model.PageCertNumber)*@
         </th>
         <th>
             Date of Entry
-            @*@Html.DisplayNameFor(model => model.DateOfEntry)*@
         </th>
         <th>
             Port of Entry
-            @*@Html.DisplayNameFor(model => model.PortOfEntry)*@
         </th>
         <th></th>
     </tr>
@@ -84,7 +71,7 @@
             @Html.DisplayFor(modelItem => item.DateOfRecord)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Location)
+            @Html.DisplayFor(modelItem => item.RecordType)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.CountryOfOrigin)

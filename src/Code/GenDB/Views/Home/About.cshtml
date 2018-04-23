@@ -14,17 +14,14 @@
 }
 
 
-<h2>Obituaries</h2>
-
-@using (Html.BeginForm("Index", "Obits", FormMethod.Get))
+@*@using (Html.BeginForm("Index", "Obits", FormMethod.Get))
 {
     //the following are search options
 
     <b> Search Option: </b>@Html.RadioButton("option", "Fname") <text>First Name</text> @Html.RadioButton("option", "Lname") <text> Last Name </text>
     @Html.RadioButton("option", "Altname")<text>Alt Name</text> @Html.TextBox("search") <input type="submit"
                                                                                                name="submit"
-                                                                                               value="Search" />
-}
+                                                                                               value="Search" />}*@
 
 <div id="tabs">
 
@@ -35,54 +32,15 @@
     </ul>
 
     <div id="tabs-1">
-        <table class="table">
-            <tr>
-                <th>
-                    First Name
-                    @*@Html.DisplayNameFor(model => model.FirstName)*@
-                </th>
-                @*<th>
-                    @Html.DisplayNameFor(model => model.MiddleName)
-                </th>*@
-                <th>
-                    Last Name
-                    @*@Html.DisplayNameFor(model => model.LastName)*@
-                </th>
-                <th>
-                    Alternate Name
-                    @*@Html.DisplayNameFor(model => model.AltName)*@
-                </th>
-                <th>
-                    Date of Record
-                    @*@Html.DisplayNameFor(model => model.DateOfRecord)*@
-                </th>
-                <th>
-                    Birth Date
-                    @*@Html.DisplayNameFor(model => model.BirthDate)*@
-                </th>
-                <th>
-                    Age
-                    @*@Html.DisplayNameFor(model => model.Age)*@
-                </th>
-                <th>
-                    Web Text
-                    @*@Html.DisplayNameFor(model => model.WebText)*@
-                </th>
-                <th></th>
-            </tr>
-        </table>
+        @Html.Action("Index", "Obits")
     </div>
 
     <div id="tabs-2">
-        Content for Tab 2 goes here.<br />
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        @Html.Action("Index", "Naturalizations")
     </div>
 
     <div id="tabs-3">
-        Content for Tab 3 goes here.<br />
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+       @Html.Action("Index", "Censuses")
     </div>
 
 </div>

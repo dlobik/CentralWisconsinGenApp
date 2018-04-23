@@ -20,6 +20,7 @@ namespace GenDB.Controllers
         {
             return View(db.County.ToList());
         }
+    
 
         // GET: Counties/Details/5
         public ActionResult Details(int? id)
