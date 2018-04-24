@@ -1,0 +1,120 @@
+﻿@model IEnumerable<GenDB.Models.Obit>
+
+@{
+    ViewBag.Title = "Obituaries";
+}
+
+<h2>Obituaries</h2>
+
+<br />
+<script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+
+@*@using (Html.BeginForm("Index", "Obits", FormMethod.Get))
+{
+    //implementing search options
+    <b> Search Option: </b>@Html.RadioButton("option", "Lname") <text>Last Name</text> @Html.RadioButton("option", "Fname") <text> First Name </text>
+    @Html.RadioButton("option", "Altname")<text>Alt Name</text> @Html.TextBox("search") <input type="submit"
+                                                                                              name="submit"
+                                                                                              value="Search" />
+}*@
+
+@*<div class="container">
+    <b>Search By : </b>
+    <select id="SearchBy">
+        <option value="fname">First Name</option>
+        <option value="lname">Last Name</option>
+    </select> <br /> <br />
+    @Html.TextBox("Search")<input type="submit" id="SearchBtn" value="Search" /> <br /><br />
+</div>*@
+
+         <table class="table">
+            <tr>
+                <th>
+                    First Name
+                </th>
+                <th>
+                    Last Name
+                </th>
+                <th>
+                    Alternate Name
+                </th>
+                <th>
+                    Date of Record
+                </th>
+                <th>
+                    Birth Date
+                </th>
+                <th>
+                    Age
+                </th>
+                <th>
+                    Web Text
+                </th>
+                <th></th>
+            </tr>
+        
+             <tbody id="DataSearching">
+                 @foreach (var item in Model)
+            {
+                     <tr>
+                         <td>
+                             @Html.DisplayFor(modelItem => item.FirstName)
+                         </td>
+                         <td>
+                             @Html.DisplayFor(modelItem => item.LastName)
+                         </td>
+                         <td>
+                             @Html.DisplayFor(modelItem => item.AltName)
+                         </td>
+                         <td>
+                             @Html.DisplayFor(modelItem => item.DateOfRecord)
+                         </td>
+                         <td>
+                             @Html.DisplayFor(modelItem => item.BirthDate)
+                         </td>
+                         <td>
+                             @Html.DisplayFor(modelItem => item.Age)
+                         </td>
+                         <td>
+                             @Html.DisplayFor(modelItem => item.WebText)
+                         </td>
+                         <td>
+                             @using (Html.BeginForm("Details", "Obituary", FormMethod.Get)) {
+                                 <button type="submit"> Add to Cart</button>
+                             }
+                         </td>
+                     </tr>
+
+                 }
+             </tbody>
+    </table>
+
+
+@*<script>
+    $(document).ready(function() {
+        $("#SearchBtn").click(function () {
+            var SearchBy = $("#SearchBy").val();
+            var SearchValue = $("#Search").val();
+            var SetData = $("#DataSearching").val();
+            SetData.html("");
+            $.ajax({
+                type: "post",
+                url: "/Home/GetSearchingData?SearchBy=" + SearchBy + "&SearchValue=" + SearchValue,
+                contentType: "html",
+                success: function (result) {
+                    if (result.length == 0) {
+                        SetData.append('<tr style="color:red"><td colspan="3"> No data matching input </td></tr>')
+                    }
+                    else {
+                        $.each(result, function (index, value) {
+                            var Data = "<tr>" +
+                                "<td>" + value.FirstName + "</td>" +
+                                "<td>" + value.LastName + "</td>" + "</tr>";
+                            SetData.append(Data);
+                        })
+                    }
+                }
+            })
+        })
+    });
+</script>*@
