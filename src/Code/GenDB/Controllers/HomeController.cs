@@ -28,7 +28,7 @@ namespace GenDB.Controllers
         }
 
         [HttpGet]
-        public PartialViewResult TOSPopUp()
+        public PartialViewResult _TOSPopUp()
         {
             return PartialView();
         }

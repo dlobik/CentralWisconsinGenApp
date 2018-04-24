@@ -5,9 +5,10 @@
 }
 
 
+<h2>Naturalizations</h2>
+<br />
 
-@if ((Model != null) && (!Model.Any())) {
-  foreach (var item in Model) {
+@foreach (var item in Model) {
     <table class="table">
         <tr>
             <td>
@@ -97,7 +98,3 @@
         </tr>
     </table>
   }
-}
-else {
-  <p>Your search sucked...</p>
-}

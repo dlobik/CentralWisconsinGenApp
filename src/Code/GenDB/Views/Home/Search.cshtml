@@ -5,7 +5,8 @@
 @{
     ViewBag.Title = "Obituaries";
 }
-@Model GenDB.ViewModels.SearchParameters
+
+@model GenDB.ViewModels.SearchParameters
 
 
 @*@using (Html.BeginForm("Index", "Obits", FormMethod.Get))
@@ -16,8 +17,39 @@
     @Html.RadioButton("option", "Altname")<text>Alt Name</text> @Html.TextBox("search") <input type="submit"
                                                                                                name="submit"
                                                                                                value="Search" />}*@
-
 <div id="tabs">
+
+    <ul>
+        <li><a href="#tabs-1">Obituaries</a></li>
+        <li><a href="#tabs-2">Naturalizations</a></li>
+        <li><a href="#tabs-3">Censuses</a></li>
+    </ul>
+
+    <div id="tabs-1">
+        @Html.Action("Search", "Obituary")
+    </div>
+
+    <div id="tabs-2">
+        @Html.Action("Search", "Naturalization")
+    </div>
+
+    <div id="tabs-3">
+        @Html.Action("Search", "Census")
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $("#tabs").tabs();
+    });
+</script>
+
+
+
+
+
+@*<div id="tabs">
 
     <ul>
         <li><a href="#tabs-1">Obituaries</a></li>
@@ -43,4 +75,4 @@
       $(function () {
           $("#tabs").tabs();
       });
-  </script>
+  </script>*@

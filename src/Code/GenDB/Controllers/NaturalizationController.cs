@@ -16,25 +16,37 @@ namespace GenDB.Controllers
     {
         private GenContext db = new GenContext();
 
+
+        public ActionResult All()
+        {
+            return View(db.Naturalization.ToList());
+        }
+
         // GET: Naturalizations
         public ActionResult Search(SearchParameters parameters)
         {
-          return (View((IEnumerable<Naturalization>)null));
-          Naturalization[] results = null;
-          if (parameters == null) results = db.Naturalization.ToArray();
-          else {
-            var query = db.Naturalization.AsQueryable();
 
-            // WATCH OUT FOR SQL INJECTION
-            if (!String.IsNullOrWhiteSpace(parameters.FirstName)) {
-              query = query.Where(p => String.Equals(p.FirstName, parameters.FirstName, StringComparison.OrdinalIgnoreCase));
-            }
-            if (!String.IsNullOrWhiteSpace(parameters.LastName)) {
-              query = query.Where(p => String.Equals(p.LastName, parameters.LastName, StringComparison.OrdinalIgnoreCase));
-            }
-            results = query.ToArray();
-          }
-          return View(results);
+
+            return View(db.Naturalization.ToList());
+
+
+
+            //return (View((IEnumerable<Naturalization>)null));
+            //Naturalization[] results = null;
+            //if (parameters == null) results = db.Naturalization.ToArray();
+            //else {
+            //  var query = db.Naturalization.AsQueryable();
+
+            //  // WATCH OUT FOR SQL INJECTION
+            //  if (!String.IsNullOrWhiteSpace(parameters.FirstName)) {
+            //    query = query.Where(p => String.Equals(p.FirstName, parameters.FirstName, StringComparison.OrdinalIgnoreCase));
+            //  }
+            //  if (!String.IsNullOrWhiteSpace(parameters.LastName)) {
+            //    query = query.Where(p => String.Equals(p.LastName, parameters.LastName, StringComparison.OrdinalIgnoreCase));
+            //  }
+            //  results = query.ToArray();
+            //}
+            //return View(results);
         }
 
         // GET: Naturalizations/Details/5

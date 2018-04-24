@@ -22,31 +22,33 @@ namespace GenDB.Controllers
     ///// Returns / displays all obituaries in the systme.
     ///// </summary>
     ///// <returns></returns>
-    //public ActionResult All()
-    //{
-    //  return View(db.Obit.ToList());
-    //}
+    public ActionResult All()
+    {
+      return View(db.Obit.ToList());
+    }
 
     // GET: Obits
     public ActionResult Search(SearchParameters parameters)
     {
-      return (View((IEnumerable<Obit>) null));
-      Obit[] results = null;
-      if (parameters == null) results = db.Obit.ToArray();
-      else {
-        var query = db.Obit.AsQueryable();
+            return View(db.Obit.ToList());
 
-        // WATCH OUT FOR SQL INJECTION
-        if (!String.IsNullOrWhiteSpace(parameters.FirstName)) {
-          query = query.Where(p => String.Equals(p.FirstName, parameters.FirstName, StringComparison.OrdinalIgnoreCase));
+            //return (View((IEnumerable<Obit>) null));
+            //Obit[] results = null;
+            //if (parameters == null) results = db.Obit.ToArray();
+            //else {
+            //  var query = db.Obit.AsQueryable();
+
+            //  // WATCH OUT FOR SQL INJECTION
+            //  if (!String.IsNullOrWhiteSpace(parameters.FirstName)) {
+            //    query = query.Where(p => String.Equals(p.FirstName, parameters.FirstName, StringComparison.OrdinalIgnoreCase));
+            //  }
+            //  if (!String.IsNullOrWhiteSpace(parameters.LastName)) {
+            //    query = query.Where(p => String.Equals(p.LastName, parameters.LastName, StringComparison.OrdinalIgnoreCase));
+            //  }
+            //  results = query.ToArray();
+            //}
+            //return View(results);
         }
-        if (!String.IsNullOrWhiteSpace(parameters.LastName)) {
-          query = query.Where(p => String.Equals(p.LastName, parameters.LastName, StringComparison.OrdinalIgnoreCase));
-        }
-        results = query.ToArray();
-      }
-      return View(results);
-    }
 
     // GET: Obits/Details/5
     public ActionResult Details(int? id)

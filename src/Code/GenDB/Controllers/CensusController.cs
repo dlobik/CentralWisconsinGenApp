@@ -15,6 +15,7 @@ namespace GenDB.Controllers
   public class CensusController : Controller
   {
     private ICensusRepository _repository;
+        private GenContext db = new GenContext();
 
     public CensusController():this(RepositoryFactory.CreateCensusRepository())
     {
@@ -25,15 +26,21 @@ namespace GenDB.Controllers
       _repository = repository;
     }
 
-    // GET: Censuses
-    public ActionResult Search(SearchParameters parameters)
+    public ActionResult All()
     {
-      var results = _repository.Search(parameters);
-      //if (results.Any()) {
-        return View(results);
-      //}
-      //return RedirectToAction();
+            return View(db.Census.ToList());
     }
+        // GET: Censuses
+        public ActionResult Search(SearchParameters parameters)
+    {
+
+            return View(db.Census.ToList());
+            //var results = _repository.Search(parameters);
+            ////if (results.Any()) {
+            //  return View(results);
+            ////}
+            ////return RedirectToAction();
+        }
 
     // GET: Censuses/Details/5
     public ActionResult Details(int? id)

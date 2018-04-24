@@ -4,8 +4,11 @@
     ViewBag.Title = "Index";
 }
 
-@if ((Model != null) && (!Model.Any())) {
-  foreach (var item in Model) {
+<h2>Censuses</h2>
+<br />
+
+@*@if ((Model != null) && (!Model.Any())) {*@
+ @foreach (var item in Model) {
      <table class="table">
        <tr>
          <td>
@@ -67,7 +70,7 @@
        </tr>
      </table>
    }
-}
+@*}
 else {
   <p>Your search sucked...</p>
-}
+}*@
