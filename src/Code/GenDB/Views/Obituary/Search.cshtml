@@ -27,7 +27,8 @@
     @Html.TextBox("Search")<input type="submit" id="SearchBtn" value="Search" /> <br /><br />
 </div>*@
 
-         <table class="table">
+@if ((Model != null) && (!Model.Any())) {
+    <table class="table">
             <tr>
                 <th>
                     First Name
@@ -54,6 +55,7 @@
             </tr>
         
              <tbody id="DataSearching">
+  foreach (var item in Model) {
                  @foreach (var item in Model)
             {
                      <tr>
@@ -88,7 +90,10 @@
                  }
              </tbody>
     </table>
-
+}
+else {
+<p>Your search sucked...</p>
+}
 
 @*<script>
     $(document).ready(function() {

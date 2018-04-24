@@ -31,7 +31,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;ENTITYFRAMEWORK</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -176,8 +176,12 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NaturalizationController.cs" />
     <Compile Include="Controllers\ObituaryController.cs" />
+    <Compile Include="DAL\CensusEntityFrameworkRepository.cs" />
+    <Compile Include="DAL\CensusSampleRepository.cs" />
     <Compile Include="DAL\GenContext.cs" />
     <Compile Include="DAL\GenInitializer.cs" />
+    <Compile Include="DAL\ICensusRepository.cs" />
+    <Compile Include="DAL\RepositoryFactory.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -270,24 +274,23 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Search.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Naturalization\Create.cshtml" />
     <Content Include="Views\Naturalization\Delete.cshtml" />
     <Content Include="Views\Naturalization\Details.cshtml" />
     <Content Include="Views\Naturalization\Edit.cshtml" />
-    <Content Include="Views\Naturalization\Index.cshtml" />
+    <Content Include="Views\Naturalization\Search.cshtml" />
     <Content Include="Views\Obituary\Create.cshtml" />
     <Content Include="Views\Obituary\Delete.cshtml" />
     <Content Include="Views\Obituary\Details.cshtml" />
     <Content Include="Views\Obituary\Edit.cshtml" />
-    <Content Include="Views\Obituary\Index.cshtml" />
+    <Content Include="Views\Obituary\Search.cshtml" />
     <Content Include="Views\Census\Create.cshtml" />
     <Content Include="Views\Census\Delete.cshtml" />
     <Content Include="Views\Census\Details.cshtml" />
     <Content Include="Views\Census\Edit.cshtml" />
-    <Content Include="Views\Census\Index.cshtml" />
+    <Content Include="Views\Census\Search.cshtml" />
     <Content Include="Views\Shared\_Nat.cshtml" />
     <Content Include="Views\County\Create.cshtml" />
     <Content Include="Views\County\Delete.cshtml" />
