@@ -239,6 +239,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\Banner-Placeholder-black.gif" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -294,9 +295,11 @@
     <Content Include="Views\Counties\Details.cshtml" />
     <Content Include="Views\Counties\Edit.cshtml" />
     <Content Include="Views\Counties\Index.cshtml" />
+    <Content Include="Views\Home\TOSPopUp.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Shared\Partials\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

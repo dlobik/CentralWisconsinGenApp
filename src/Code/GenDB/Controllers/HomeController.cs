@@ -49,6 +49,12 @@ namespace GenDB.Controllers
             return View();
         }
 
+        [HttpGet]
+        public PartialViewResult TOSPopUp()
+        {
+            return PartialView();
+        }
+
         /* Test JsonResult Method
         public JsonResult GetSearchingData(string SearchBy, string SearchValue)
         {

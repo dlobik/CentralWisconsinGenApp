@@ -27,67 +27,73 @@
     @Html.TextBox("Search")<input type="submit" id="SearchBtn" value="Search" /> <br /><br />
 </div>*@
 
-         <table class="table">
-            <tr>
-                <th>
-                    First Name
-                </th>
-                <th>
-                    Last Name
-                </th>
-                <th>
-                    Alternate Name
-                </th>
-                <th>
-                    Date of Record
-                </th>
-                <th>
-                    Birth Date
-                </th>
-                <th>
-                    Age
-                </th>
-                <th>
-                    Web Text
-                </th>
-                <th></th>
-            </tr>
-        
-             <tbody id="DataSearching">
-                 @foreach (var item in Model)
-            {
-                     <tr>
-                         <td>
-                             @Html.DisplayFor(modelItem => item.FirstName)
-                         </td>
-                         <td>
-                             @Html.DisplayFor(modelItem => item.LastName)
-                         </td>
-                         <td>
-                             @Html.DisplayFor(modelItem => item.AltName)
-                         </td>
-                         <td>
-                             @Html.DisplayFor(modelItem => item.DateOfRecord)
-                         </td>
-                         <td>
-                             @Html.DisplayFor(modelItem => item.BirthDate)
-                         </td>
-                         <td>
-                             @Html.DisplayFor(modelItem => item.Age)
-                         </td>
-                         <td>
-                             @Html.DisplayFor(modelItem => item.WebText)
-                         </td>
-                         <td>
-                             @using (Html.BeginForm("Details", "Obits", FormMethod.Get)) {
-                                 <button type="submit"> Add to Cart</button>
-                             }
-                         </td>
-                     </tr>
+@foreach (var item in Model)
+{
+    <table class="table">
+        <tr>
+            <td>
+                <table class="table-striped">
+                    <tr>
+                        <td>Last Name:</td>
+                        <td>@item.LastName</td>
+                    </tr>
+                    <tr>
+                        <td>First Name:</td>
+                        <td>@item.FirstName</td>
+                    </tr>
+                    <tr>
+                        <td>Alternate Name:</td>
+                        <td>@item.AltName</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="table-striped">
+                    <tr>
+                        <td>Date of Record:</td>
+                        <td>@item.DateOfRecord</td>
+                    </tr>
+                    <tr>
+                        <td>Age:</td>
+                        <td>@item.Age</td>
+                    </tr>
+                    <tr>
+                        <td>County Filed:</td>
+                        <td>@item.CountyID</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="table-striped">
+                    <td>
+                        @using (Html.BeginForm("Details", "Obits", FormMethod.Get))
+                        {
+                            <button type="button" id="WTPopUp">Web Text</button>
+                        }
+                    </td>
 
-                 }
-             </tbody>
+
+
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            @using (Html.BeginForm("Details", "Obits", FormMethod.Get))
+                            {
+                                <button type="submit">Add to Cart</button>
+                            }
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
     </table>
+
+}
+
+
 
 
 @*<script>
