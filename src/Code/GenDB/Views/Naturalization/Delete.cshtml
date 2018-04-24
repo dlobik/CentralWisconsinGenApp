@@ -1,0 +1,144 @@
+﻿@model GenDB.Models.Naturalization
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Naturalization</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MiddleName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MiddleName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DOB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DOB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfRecord)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfRecord)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Location)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CountryOfOrigin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CountryOfOrigin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Series)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Series)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Box)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Box)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Folder)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Folder)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VolNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VolNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PageCertNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PageCertNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfEntry)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfEntry)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PortOfEntry)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PortOfEntry)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

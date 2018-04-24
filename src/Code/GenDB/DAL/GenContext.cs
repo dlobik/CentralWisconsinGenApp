@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Web;
 using GenDB.Models;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
+using GenDB.ViewModels;
 
 namespace GenDB.DAL
 {
-    public class GenContext : DbContext
+  public class GenContext : DbContext
     {
         public GenContext() : base("GenContext")
         {
@@ -25,5 +24,10 @@ namespace GenDB.DAL
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
+
+      public IEnumerable<Census> SearchCensus(SearchParameters parameters)
+      {
+        return(Census);
+      }
     }
 }

@@ -1,0 +1,73 @@
+﻿@model IEnumerable<GenDB.Models.Census>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@if ((Model != null) && (!Model.Any())) {
+  foreach (var item in Model) {
+     <table class="table">
+       <tr>
+         <td>
+           <table class="table-striped">
+             <tr>
+               <td>Last Name:</td>
+               <td>@item.LastName</td>
+             </tr>
+             <tr>
+               <td>First Name:</td>
+               <td>@item.FirstName</td>
+             </tr>
+             <tr>
+               <td>Age:</td>
+               <td>@item.Age</td>
+             </tr>
+           </table>
+         </td>
+         <td>
+           <table class="table-striped">
+             <tr>
+               <td>Date of Record:</td>
+               <td>@item.DateOfRecord</td>
+             </tr>
+             <tr>
+               <td>County Filed:</td>
+               <td>@item.CountyID</td>
+             </tr>
+             <tr>
+               <td>City/Town:</td>
+               <td>@item.Town</td>
+             </tr>
+           </table>
+         </td>
+         <td>
+           <table class="table-striped">
+             <tr>
+               <td>Page:</td>
+               <td>@item.Page</td>
+             </tr>
+             <td>
+               @using (Html.BeginForm("Details", "Obituary", FormMethod.Get)) {
+                 <button type="submit">Other Household Members</button>
+               }
+             </td>
+           </table>
+         </td>
+         <td>
+           <table>
+             <tr>
+               <td>
+                 @using (Html.BeginForm("Details", "Obituary", FormMethod.Get)) {
+                   <button type="submit">Add to Cart</button>
+                 }
+               </td>
+             </tr>
+           </table>
+         </td>
+       </tr>
+     </table>
+   }
+}
+else {
+  <p>Your search sucked...</p>
+}

@@ -17,7 +17,7 @@ namespace GenDB.ViewModels
         public string AltName { get; set; }
         [DataType(DataType.Date)]
         [DisplayName("Date of Record:  ")]
-        public DateTime DateOfRecord { get; set; }
+        public DateTime? DateOfRecord { get; set; }
         [DisplayName("County:  ")]
         public string County { get; set; }
     }

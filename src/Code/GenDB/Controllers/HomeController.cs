@@ -18,35 +18,13 @@ namespace GenDB.Controllers
             return View();
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
-
         /* We can pass all of the search parameters here through the viewmodel SearchParameters.
          * Once we have them in this action, we can create DB queries based on them for each table.
          * After we create queries in this Search method, How do we pass into each individual View / Model??? (Obit, Nat, Census)
          */
         public ActionResult Search(SearchParameters searchParam)
         {
-            var fName = searchParam.FirstName;
-            var lName = searchParam.LastName;
-            var altName = searchParam.AltName;
-            var recordDate = searchParam.DateOfRecord;
-            var county = searchParam.County;
-
-
-
-            return View();
+            return View(searchParam);
         }
 
         [HttpGet]
