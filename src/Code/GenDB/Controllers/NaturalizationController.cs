@@ -29,6 +29,8 @@ namespace GenDB.Controllers
 
             return View(db.Naturalization.ToList());
 
+            //what if I call obit, nat, and census controller methods in this search method??
+
 
 
             //return (View((IEnumerable<Naturalization>)null));
