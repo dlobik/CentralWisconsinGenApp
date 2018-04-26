@@ -4,6 +4,38 @@
     ViewBag.Title = "Obituaries";
 }
 
+
+<script type="text/javascript">
+    $(function () {
+        $(".anchorWebtext").click(function () {
+            var id = ("#data-id");
+            $(this).dialog({
+                autoOpen: false,
+                width: 400,
+                resizable: false,
+                title: 'Web Text',
+                modal: true,
+                open: function (event, ui) {
+                    $(this).load("@Url.Action("Webtext(id)")").open;
+                },
+                buttons: {
+                "Close": function () {
+                    $(this).dialog("close");
+                }
+            }
+        });
+
+    //    $('#WT-link').click(function () {
+    //        $('#dialog').dialog('open');
+    //    });
+    //});
+</script>
+<div id="dialog" title="Web Text" style="overflow: hidden;">
+
+</div>
+
+
+
 <h2>Obituaries</h2>
 
 <br />
@@ -65,13 +97,11 @@
             </td>
             <td>
                 <table class="table-striped">
-                    <td>
-                        @using (Html.BeginForm("Details", "Obituary", FormMethod.Get))
-                        {
-                            <button type="button" id="WTPopUp">Web Text</button>
-                        }
-                    </td>
-
+                    <tr>
+                        <td>
+                                <button type="button" class="anchorWebtext" data-id="@item.ID">Web Text</button>
+                        </td>
+                    </tr>
 
 
                 </table>

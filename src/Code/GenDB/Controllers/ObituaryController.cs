@@ -48,10 +48,17 @@ namespace GenDB.Controllers
             //  results = query.ToArray();
             //}
             //return View(results);
-        }
+     }
 
-    // GET: Obits/Details/5
-    public ActionResult Details(int? id)
+     public ActionResult Webtext(int Id)
+     {
+         Obit wt = new Obit();
+         wt = db.Obit.Find(Id);
+         return PartialView("_WTPopup", wt);
+     }
+
+        // GET: Obits/Details/5
+        public ActionResult Details(int? id)
     {
       if (id == null) {
         return new HttpStatusCodeResult(HttpStatusCode.BadRequest);

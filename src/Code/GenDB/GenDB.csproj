@@ -298,6 +298,7 @@
     <Content Include="Views\County\Edit.cshtml" />
     <Content Include="Views\County\Index.cshtml" />
     <Content Include="Views\Shared\_TOSPopUp.cshtml" />
+    <Content Include="Views\Shared\_WTPopUp.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

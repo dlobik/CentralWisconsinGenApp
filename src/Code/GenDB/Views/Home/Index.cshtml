@@ -42,39 +42,50 @@
         });
     });
 </script>
-<div id="dialog" title="Create Album" style="overflow: hidden;">
+<div id="dialog" title="Terms of Service Agreement" style="overflow: hidden;">
    
 </div>
-<p>Please review our <a href="#" id="TOS-link">Terms of Service Agreement</a> prior to use.</p>
+
+<div>
+    <p>Please review our <a href="#" id="TOS-link">Terms of Service Agreement</a> prior to use.</p>
+</div>
 
 
-
-
+<div>
     @using (Html.BeginForm("Search", "Home"))
     {
-        @Html.LabelFor(m => m.FirstName)
-        @Html.TextBoxFor(m => m.FirstName)
+        <div>
+            @Html.LabelFor(m => m.LastName, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.TextBoxFor(m => m.LastName, htmlAttributes: new { @class = "form-control" })
+        </div>
         <br />
+        <div>
+            @Html.LabelFor(m => m.FirstName, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.TextBoxFor(m => m.FirstName, htmlAttributes: new { @class = "form-control"})
+        </div>
         <br />
-        @Html.LabelFor(m => m.LastName)
-        @Html.TextBoxFor(m => m.LastName)
+        <div width>
+            @Html.LabelFor(m => m.AltName, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.TextBoxFor(m => m.AltName, htmlAttributes: new { @class = "form-control" })
+        </div>
         <br />
+        <div>
+        @Html.LabelFor(m => m.DateOfRecord, htmlAttributes: new { @class = "control-label col-md-2" })
+        @Html.TextBoxFor(m => m.DateOfRecord, htmlAttributes: new { @class = "form-control" })
+        </div>
         <br />
-        @Html.LabelFor(m => m.AltName)
-        @Html.TextBoxFor(m => m.AltName)
+        <div>
+        @Html.LabelFor(m => m.County, htmlAttributes: new { @class = "control-label col-md-2" })
+        @Html.TextBoxFor(m => m.County, htmlAttributes: new { @class = "form-control" })
+        </div>
         <br />
-        <br />
-        @Html.LabelFor(m => m.DateOfRecord)
-        @Html.TextBoxFor(m => m.DateOfRecord)
-        <br />
-        <br />
-        @Html.LabelFor(m => m.County)
-        @Html.TextBoxFor(m => m.County)
-        <br />
-        <br />
+        <div>
         <button type="reset">Clear All Fields</button>
         <button type="submit">Search</button>
+        </div>
     }
+
+</div>
 
 
 
