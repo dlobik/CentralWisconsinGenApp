@@ -6,7 +6,7 @@
 
 
 <script type="text/javascript">
-    $(function () {
+  $(document).ready(function () {
         $(".anchorWebtext").click(function () {
             var id = ("#data-id");
             $(this).dialog({
@@ -24,11 +24,11 @@
                 }
             }
         });
-
     //    $('#WT-link').click(function () {
     //        $('#dialog').dialog('open');
     //    });
-    //});
+      });
+    });
 </script>
 <div id="dialog" title="Web Text" style="overflow: hidden;">
 
