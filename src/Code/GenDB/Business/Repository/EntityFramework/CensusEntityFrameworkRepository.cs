@@ -5,7 +5,7 @@ using System.Linq;
 using GenDB.Models;
 using GenDB.ViewModels;
 
-namespace GenDB.DAL
+namespace GenDB.Business.Repository.EntityFramework
 {
   public class CensusEntityFrameworkRepository : ICensusRepository
   {
@@ -21,7 +21,7 @@ namespace GenDB.DAL
 
     public IEnumerable<Census> All()
     {
-      return (new Census[0]);
+      return (_census);
     }
 
     public IEnumerable<Census> Search(SearchParameters parameters)
@@ -33,10 +33,10 @@ namespace GenDB.DAL
 
         // WATCH OUT FOR SQL INJECTION
         if (!String.IsNullOrWhiteSpace(parameters.FirstName)) {
-          //query = query.Where(p => String.Equals(p.FirstName, parameters.FirstName, StringComparison.OrdinalIgnoreCase));
+          query = query.Where(p => DbFunctions.Like(p.FirstName, parameters.FirstName));
         }
         if (!String.IsNullOrWhiteSpace(parameters.LastName)) {
-          //query = query.Where(p => String.Equals(p.LastName, parameters.LastName, StringComparison.OrdinalIgnoreCase));
+          query = query.Where(p => DbFunctions.Like(p.LastName, parameters.LastName));
         }
         results = query.ToArray();
       }
@@ -45,7 +45,7 @@ namespace GenDB.DAL
 
     public Census Get(int id)
     {
-      return(null);
+      return(_census.FirstOrDefault(c => c.ID == id));
     }
 
     /// <summary>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</summary>

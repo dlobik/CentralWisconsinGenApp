@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using GenDB.Models;
 using GenDB.ViewModels;
 
-namespace GenDB.DAL
+namespace GenDB.Business.Repository
 {
   public interface ICensusRepository: IDisposable
   {

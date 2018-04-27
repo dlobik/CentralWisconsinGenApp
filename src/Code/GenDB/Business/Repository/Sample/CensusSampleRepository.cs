@@ -1,11 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using GenDB.Models;
 using GenDB.ViewModels;
 
-namespace GenDB.DAL
+namespace GenDB.Business.Repository.Sample
 {
   public class CensusSampleRepository: ICensusRepository
   {
