@@ -197,6 +197,7 @@
     <Compile Include="Models\Census.cs" />
     <Compile Include="Models\CensusMember.cs" />
     <Compile Include="Models\County.cs" />
+    <Compile Include="Models\Model.cs" />
     <Compile Include="Models\Naturalization.cs" />
     <Compile Include="Models\News.cs" />
     <Compile Include="Models\Obit.cs" />

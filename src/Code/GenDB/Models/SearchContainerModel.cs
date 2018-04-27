@@ -5,8 +5,8 @@ using System.Web;
 
 namespace GenDB.Models
 {
-    public class SearchContainerModel
-    {
+    public class SearchContainerModel: Model
+  {
 
         /* Trying to figure out of if possible to search all 3 tables from one controller method and return a container 
          * of the results, then populate individual parital views based off of data in containers / model

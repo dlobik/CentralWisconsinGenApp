@@ -7,10 +7,9 @@ using System.Web.Mvc;
 
 namespace GenDB.Models
 {
-    public class County
-    {
+    public class County : Model
+  {
         public int ID { get; set; }
         public string Name { get; set; }
-        public IEnumerable<SelectListItem> Counties { get; set; }
     }
 }

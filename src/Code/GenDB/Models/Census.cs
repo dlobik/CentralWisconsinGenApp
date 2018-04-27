@@ -6,7 +6,7 @@ using System.Web;
 
 namespace GenDB.Models
 {
-    public class Census
+    public class Census: Model
     {
         public int ID { get; set; }
         public string FirstName { get; set; }

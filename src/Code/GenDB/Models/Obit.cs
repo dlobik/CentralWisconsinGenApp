@@ -6,8 +6,8 @@ using System.Web;
 
 namespace GenDB.Models
 {
-    public class Obit
-    {
+    public class Obit: Model
+  {
         public int ID { get; set; }
         public string FirstName { get; set; }
         //public string MiddleName { get; set; }

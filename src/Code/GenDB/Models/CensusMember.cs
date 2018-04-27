@@ -5,8 +5,8 @@ using System.Web;
 
 namespace GenDB.Models
 {
-    public class CensusMember
-    {
+    public class CensusMember : Model
+  {
         public int ID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
