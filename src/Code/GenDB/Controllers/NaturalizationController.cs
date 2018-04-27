@@ -9,7 +9,6 @@ using System.Web.Mvc;
 using GenDB.Business.Repository;
 using GenDB.Business.Repository.EntityFramework;
 using GenDB.Models;
-using GenDB.ViewModels;
 
 namespace GenDB.Controllers
 {

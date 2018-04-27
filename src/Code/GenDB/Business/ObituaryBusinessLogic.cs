@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using GenDB.Business.Repository;
 using GenDB.Models;
-using GenDB.ViewModels;
 
 namespace GenDB.Business
 {

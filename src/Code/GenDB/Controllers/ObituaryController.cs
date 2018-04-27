@@ -9,7 +9,6 @@ using System.Web;
 using System.Web.Mvc;
 using GenDB.Business;
 using GenDB.Models;
-using GenDB.ViewModels;
 using PagedList;
 
 namespace GenDB.Controllers

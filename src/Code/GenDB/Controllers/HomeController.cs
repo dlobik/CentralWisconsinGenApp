@@ -3,7 +3,6 @@ using System.Linq;
 using System.Web.Mvc;
 using GenDB.Business.Repository.EntityFramework;
 using GenDB.Models;
-using GenDB.ViewModels;
 
 namespace GenDB.Controllers
 {
