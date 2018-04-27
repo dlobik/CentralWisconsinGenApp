@@ -176,13 +176,21 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NaturalizationController.cs" />
     <Compile Include="Controllers\ObituaryController.cs" />
-    <Compile Include="DAL\CensusEntityFrameworkRepository.cs" />
-    <Compile Include="DAL\CensusSampleRepository.cs" />
-    <Compile Include="DAL\GenContext.cs" />
-    <Compile Include="DAL\GenInitializer.cs" />
-    <Compile Include="DAL\ICensusRepository.cs" />
-    <Compile Include="DAL\ObituaryBuisnessLogic.cs" />
-    <Compile Include="DAL\RepositoryFactory.cs" />
+    <Compile Include="Business\Repository\Sample\CountySampleRepository.cs" />
+    <Compile Include="Business\Repository\ICountyRepository.cs" />
+    <Compile Include="Business\Repository\Sample\NaturalizationSampleRepository.cs" />
+    <Compile Include="Business\Repository\Sample\ObituarySampleRepository.cs" />
+    <Compile Include="Business\Repository\EntityFramework\NaturalizationEntityFrameworkRepository.cs" />
+    <Compile Include="Business\Repository\EntityFramework\ObituaryEntityFrameworkRepository.cs" />
+    <Compile Include="Business\Repository\EntityFramework\CensusEntityFrameworkRepository.cs" />
+    <Compile Include="Business\Repository\Sample\CensusSampleRepository.cs" />
+    <Compile Include="Business\Repository\EntityFramework\GenContext.cs" />
+    <Compile Include="Business\Repository\EntityFramework\GenInitializer.cs" />
+    <Compile Include="Business\Repository\INaturalizationRepository.cs" />
+    <Compile Include="Business\Repository\IObituaryRepository.cs" />
+    <Compile Include="Business\Repository\ICensusRepository.cs" />
+    <Compile Include="Business\ObituaryBusinessLogic.cs" />
+    <Compile Include="Business\Repository\RepositoryFactory.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -304,6 +312,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Business\Models\" />
+    <Folder Include="Business\Repository\Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

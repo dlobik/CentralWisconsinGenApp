@@ -7,7 +7,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using GenDB.DAL;
+using GenDB.Business;
 using GenDB.Models;
 using GenDB.ViewModels;
 using PagedList;
@@ -16,60 +16,50 @@ namespace GenDB.Controllers
 {
   public class ObituaryController : Controller
   {
-    private GenContext db = new GenContext();
+    private ObituaryBusinessLogic _service;
 
-    ///// <summary>
-    ///// Returns / displays all obituaries in the systme.
-    ///// </summary>
-    ///// <returns></returns>
+    public ObituaryController()
+    {
+      _service = new ObituaryBusinessLogic();
+    }
+
+    /// <summary>
+    /// Returns / displays all obituaries in the systme.
+    /// </summary>
+    /// <returns></returns>
     public ActionResult All()
     {
-      return View(db.Obit.ToList());
+      return View("Search", _service.All().ToList());
     }
 
     // GET: Obits
     public ActionResult Search(SearchParameters parameters)
     {
-            return View(db.Obit.ToList());
+      var results = _service.Search(parameters);
+      // Do some additional conversion / of the data to a local UI model, etc.
+      return View(results);
+    }
 
-            //return (View((IEnumerable<Obit>) null));
-            //Obit[] results = null;
-            //if (parameters == null) results = db.Obit.ToArray();
-            //else {
-            //  var query = db.Obit.AsQueryable();
+    public ActionResult Webtext(int id)
+    {
+      var wt = _service.Get(id);
+      return PartialView("_WTPopup", wt);
+    }
 
-            //  // WATCH OUT FOR SQL INJECTION
-            //  if (!String.IsNullOrWhiteSpace(parameters.FirstName)) {
-            //    query = query.Where(p => String.Equals(p.FirstName, parameters.FirstName, StringComparison.OrdinalIgnoreCase));
-            //  }
-            //  if (!String.IsNullOrWhiteSpace(parameters.LastName)) {
-            //    query = query.Where(p => String.Equals(p.LastName, parameters.LastName, StringComparison.OrdinalIgnoreCase));
-            //  }
-            //  results = query.ToArray();
-            //}
-            //return View(results);
-     }
-
-     public ActionResult Webtext(int Id)
-     {
-         Obit wt = new Obit();
-         wt = db.Obit.Find(Id);
-         return PartialView("_WTPopup", wt);
-     }
-
-        // GET: Obits/Details/5
-        public ActionResult Details(int? id)
+    // GET: Obits/Details/5
+    public ActionResult Details(int? id)
     {
       if (id == null) {
         return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
       }
-      Obit obit = db.Obit.Find(id);
+      Obit obit = _service.Get(id.GetValueOrDefault());
       if (obit == null) {
         return HttpNotFound();
       }
       return View(obit);
     }
 
+#if EDITABLE
     // GET: Obits/Create
     public ActionResult Create()
     {
@@ -143,11 +133,12 @@ namespace GenDB.Controllers
       db.SaveChanges();
       return RedirectToAction("Index");
     }
+#endif
 
     protected override void Dispose(bool disposing)
     {
       if (disposing) {
-        db.Dispose();
+        _service.Dispose();
       }
       base.Dispose(disposing);
     }

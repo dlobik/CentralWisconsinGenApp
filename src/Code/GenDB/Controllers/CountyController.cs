@@ -6,7 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using GenDB.DAL;
+using GenDB.Business.Repository.EntityFramework;
 using GenDB.Models;
 
 namespace GenDB.Controllers

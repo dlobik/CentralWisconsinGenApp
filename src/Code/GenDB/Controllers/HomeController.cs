@@ -1,7 +1,7 @@
-﻿using GenDB.DAL;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
+using GenDB.Business.Repository.EntityFramework;
 using GenDB.Models;
 using GenDB.ViewModels;
 
@@ -38,10 +38,11 @@ namespace GenDB.Controllers
          */
         public ActionResult Search(SearchParameters searchParam)
         {
-           
-            var business = new ObituaryBuisnessLogic();
-            var model = business.Search(searchParam);
-            return View(model.ToList());
+          return(View(searchParam));
+
+          //var business = new ObituaryBuisnessLogic();
+          //var model = business.Search(searchParam);
+          //return View(model.ToList());
         }
 
         [HttpGet]

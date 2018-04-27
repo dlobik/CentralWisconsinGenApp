@@ -6,7 +6,8 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using GenDB.DAL;
+using GenDB.Business.Repository;
+using GenDB.Business.Repository.EntityFramework;
 using GenDB.Models;
 using GenDB.ViewModels;
 
@@ -15,9 +16,8 @@ namespace GenDB.Controllers
   public class CensusController : Controller
   {
     private ICensusRepository _repository;
-        private GenContext db = new GenContext();
 
-    public CensusController():this(RepositoryFactory.CreateCensusRepository())
+    public CensusController() : this(RepositoryFactory.CreateCensusRepository())
     {
     }
 
@@ -28,19 +28,14 @@ namespace GenDB.Controllers
 
     public ActionResult All()
     {
-            return View(db.Census.ToList());
+      return View("Search", _repository.All());
     }
-        // GET: Censuses
-        public ActionResult Search(SearchParameters parameters)
-    {
 
-            return View(db.Census.ToList());
-            //var results = _repository.Search(parameters);
-            ////if (results.Any()) {
-            //  return View(results);
-            ////}
-            ////return RedirectToAction();
-        }
+    // GET: Censuses
+    public ActionResult Search(SearchParameters parameters)
+    {
+      return (View(_repository.Search(parameters)));
+    }
 
     // GET: Censuses/Details/5
     public ActionResult Details(int? id)
@@ -55,13 +50,13 @@ namespace GenDB.Controllers
       return View(census);
     }
 
+#if EDITABLE
     // GET: Censuses/Create
     public ActionResult Create()
     {
       return View();
     }
 
-#if EDITABLE
     // POST: Censuses/Create
     // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
     // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
