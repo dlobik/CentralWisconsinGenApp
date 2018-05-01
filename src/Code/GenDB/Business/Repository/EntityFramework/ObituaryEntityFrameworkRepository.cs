@@ -37,6 +37,9 @@ namespace GenDB.Business.Repository.EntityFramework
         if (!String.IsNullOrWhiteSpace(parameters.LastName)) {
           query = query.Where(p => DbFunctions.Like(p.LastName, parameters.LastName));
         }
+        if (!String.IsNullOrWhiteSpace(parameters.AltName)) {
+          query = query.Where(p => DbFunctions.Like(p.AltName, parameters.AltName));
+        }
         results = query.ToArray();
       }
       return (results);
