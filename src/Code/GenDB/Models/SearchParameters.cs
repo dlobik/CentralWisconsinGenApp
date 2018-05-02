@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.Web.Mvc;
 
 namespace GenDB.Models
 {
@@ -13,10 +15,11 @@ namespace GenDB.Models
         [DisplayName("Alternate Name:  ")]
         public string AltName { get; set; }
         [DataType(DataType.Date)]
-        [DisplayName("Date of Record:  ")]
-        public DateTime? DateOfRecord { get; set; }
+        [DisplayName("Event Year:  ")]
+        public DateTime? EventYear { get; set; }
         [DisplayName("County:  ")]
         public string County { get; set; }
+        public IEnumerable<SelectListItem> Counties { get; set; }
 
     }
 }

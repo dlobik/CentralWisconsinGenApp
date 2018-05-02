@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using GenDB.Models;
 
 namespace GenDB.Business.Repository.Sample
@@ -13,7 +14,8 @@ namespace GenDB.Business.Repository.Sample
         new County() { ID = 97, Name="Portage"},
         new County() { ID = 115,Name="Shawano"},
         new County() { ID = 073,Name="Marathon"},
-        new County() { ID = 079, Name="Milwaukee"}
+        new County() { ID = 079, Name="Milwaukee"},
+        new County() { ID = 123, Name="Stevens Point"}
       };
     }
 
@@ -26,5 +28,15 @@ namespace GenDB.Business.Repository.Sample
     public void Dispose()
     {
     }
-  }
+
+        public County Get(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<County> Search(SearchParameters parameters)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

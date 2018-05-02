@@ -29,5 +29,14 @@ namespace GenDB.Business.Repository
       return (new ObituarySampleRepository());
 #endif
     }
-  }
+
+    public static ICountyRepository CreateCountyRepository()
+    {
+#if ENTITYFRAMEWORK
+      return (new CountyEntityFrameworkRepository(new GenContext()));
+#else
+      return (new ObituarySampleRepository());
+#endif
+    }
+    }
 }
