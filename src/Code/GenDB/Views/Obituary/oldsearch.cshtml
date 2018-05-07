@@ -1,0 +1,177 @@
+﻿@model IEnumerable<GenDB.Models.Obit>
+
+@{
+    ViewBag.Title = "View1";
+}
+
+<h2>View1</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AltName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateOfRecord)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BirthDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Age)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WebText)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AltName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateOfRecord)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BirthDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Age)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WebText)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>
+
+
+
+@*@model IEnumerable<GenDB.Models.Obit>
+
+@{
+    ViewBag.Title = "Obituaries";
+}*@
+
+
+@*<script type="text/javascript">
+  $(document).ready(function () {
+        $(".anchorWebtext").click(function () {
+            var id = ("#data-id");
+            $(this).dialog({
+                autoOpen: false,
+                width: 400,
+                resizable: false,
+                title: 'Web Text',
+                modal: true,
+                open: function (event, ui) {
+                    $(this).load("@Url.Action("Webtext(id)")").open;
+                },
+                buttons: {
+                "Close": function () {
+                    $(this).dialog("close");
+                }
+            }
+        });
+    //    $('#WT-link').click(function () {
+    //        $('#dialog').dialog('open');
+    //    });
+      });
+    });
+</script>
+<div id="dialog" title="Web Text" style="overflow: hidden;">
+
+</div>
+
+
+
+<h2>Obituaries</h2>
+
+<br />
+<script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+
+
+@foreach (var item in Model)
+{
+    <table id="table_id" class="table">
+        <tr>
+            <td>
+                <table class="table-striped">
+                    <tr>
+                        <td>Last Name:</td>
+                        <td>@item.LastName</td>
+                    </tr>
+                    <tr>
+                        <td>First Name:</td>
+                        <td>@item.FirstName</td>
+                    </tr>
+                    <tr>
+                        <td>Alternate Name:</td>
+                        <td>@item.AltName</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="table-striped">
+                    <tr>
+                        <td>Date of Record:</td>
+                        <td>@item.DateOfRecord</td>
+                    </tr>
+                    <tr>
+                        <td>Age:</td>
+                        <td>@item.Age</td>
+                    </tr>
+                    <tr>
+                        <td>County Filed:</td>
+                        <td>@item.CountyID</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="table-striped">
+                    <tr>
+                        <td>
+                            <button type="button" class="anchorWebtext" data-id="@item.ID">Web Text</button>
+                        </td>
+                    </tr>
+
+
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            @using (Html.BeginForm("Details", "Obituary", FormMethod.Get))
+                            {
+                                <button type="submit">Add to Cart</button>
+                            }
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+}*@

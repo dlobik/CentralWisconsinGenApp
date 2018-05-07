@@ -12,7 +12,7 @@ namespace GenDB.Business.Repository.Sample
     public ObituarySampleRepository()
     {
       _models = new List<Obit>() {
-            new Obit{ID = 1, FirstName="Carson", LastName="Alexander", AltName="Colgy", DateOfRecord=DateTime.Parse("2009-09-01"), BirthDate="2/10/15", Age=1, WebText="Web Text 1"},
+            new Obit{ID = 1, FirstName="Carson", LastName="Alexander", AltName="Colgy", DateOfRecord=DateTime.Parse("2009-09-01"), BirthDate="2/10/15", Age=1, WebText="Web Text 1",},
             new Obit{ID = 2, FirstName="Bill", LastName="Bango", AltName="Couy", DateOfRecord=DateTime.Parse("2004-09-01"), BirthDate="2/10/15", Age=1, WebText="Web Text 2"},
             new Obit{ID = 3, FirstName="Craig", LastName="Qwerty", AltName="Cooy", DateOfRecord=DateTime.Parse("2012-09-01"), BirthDate="2/10/15", Age=1, WebText="Web Text 3"},
             new Obit{ID = 4, FirstName="Charles", LastName="Zippy", AltName="Coogu", DateOfRecord=DateTime.Parse("2010-09-01"), BirthDate="2/10/15", Age=1, WebText="Web Text 4"},

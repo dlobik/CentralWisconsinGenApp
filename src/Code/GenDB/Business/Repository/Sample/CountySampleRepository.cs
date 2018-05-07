@@ -11,11 +11,11 @@ namespace GenDB.Business.Repository.Sample
     public CountySampleRepository()
     {
       _models = new List<County>() {
-        new County() { ID = 97, Name="Portage"},
-        new County() { ID = 115,Name="Shawano"},
-        new County() { ID = 073,Name="Marathon"},
-        new County() { ID = 079, Name="Milwaukee"},
-        new County() { ID = 123, Name="Stevens Point"}
+        new County() { ID = 1, Name="Portage"},
+        new County() { ID = 2,Name="Shawano"},
+        new County() { ID = 3,Name="Marathon"},
+        new County() { ID = 4, Name="Milwaukee"},
+        new County() { ID = 5, Name="Stevens Point"}
       };
     }
 
