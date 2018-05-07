@@ -18,7 +18,7 @@ namespace GenDB.Business.Repository.Sample
             new Obit{ID = 4, FirstName="Charles", LastName="Zippy", AltName="Coogu", DateOfRecord=DateTime.Parse("2010-09-01"), BirthDate="2/10/15", Age=1, WebText="Web Text 4"},
             new Obit{ID = 5, FirstName="Franksrson", LastName="Myre", AltName="Coguy", DateOfRecord=DateTime.Parse("2011-09-01"), BirthDate="2/10/15", Age=1, WebText="Web Text 5"},
             new Obit{ID = 6, FirstName="Dirty", LastName="Dave", AltName="Clgy", DateOfRecord=DateTime.Parse("2002-09-01"), BirthDate="2/10/15", Age=1, WebText="Web Text 6"},
-            new Obit{ID = 7, FirstName="Big Dave", LastName="Dancer", AltName="Cguy", DateOfRecord=DateTime.Parse("2011-09-01"), BirthDate="2/10/15", Age=1, WebText="Web Text 7"},
+            new Obit{ID = 7, FirstName="Big Dave", LastName="Dancer", AltName="Cguy", DateOfRecord=DateTime.Parse("2001-09-01"), BirthDate="2/10/15", Age=1, WebText="Web Text 7"},
             new Obit{ID = 8, FirstName="Bye", LastName="Lalala", AltName="Coguy", DateOfRecord=DateTime.Parse("2022-09-01"), BirthDate="2/10/15", Age=1, WebText="Web Text 8"},
       };
     }

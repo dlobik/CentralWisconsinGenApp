@@ -40,6 +40,9 @@ namespace GenDB.Business.Repository.EntityFramework
         if (!String.IsNullOrWhiteSpace(parameters.AltName)) {
           query = query.Where(p => DbFunctions.Like(p.AltName, parameters.AltName));
         }
+        if(!String.IsNullOrWhiteSpace(parameters.EventYear.ToString())) {
+          query = query.Where(p => p.DateOfRecord.Year == parameters.EventYear);
+        }
         results = query.ToArray();
       }
       return (results);
