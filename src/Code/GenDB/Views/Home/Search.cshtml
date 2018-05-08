@@ -5,37 +5,6 @@
 <script src="@Url.Content("~/Scripts/jquery-ui-1.8.24.min.js")" type="text/javascript"></script>
 
 
-
-@section scripts {
-  <script type="text/javascript">
-  $(document).ready(function() {
-    //var search = @Html.Raw(Model.ToJson());
-    $("#tabs").tabs({
-      load: function (event, ui) {
-        console.log('load the crap...');
-      }
-    });
-    $('#tabs .ui-tab').bind('click', function(event) {
-      console.log('tab click'+JSON.stringify(event.currentTarget));
-      console.log(search);
-      console.log(event);
-
-      /*
-      $.ajax({
-      url: '',
-      sucess: function() {
-    
-      },
-      error: function() {
-    
-      }
-      */
-    });
-  });
-  </script>
-}
-
-
 @*<script>
    $(document).ready(function () {
       $.ajax({
@@ -71,3 +40,35 @@
       @Html.Action("Search", "Census", new RouteValueDictionary() { { "parameters", Model } })
   </div>
 </div>
+
+
+@section scripts {
+    <script type="text/javascript">
+  $(document).ready(function() {
+    //var search = @Html.Raw(Model.ToJson());
+    $("#tabs").tabs({
+      load: function (event, ui) {
+        console.log('load the crap...');
+      }
+      });
+        $('#tabs').css('width', '1300px');
+    $('#tabs .ui-tab').bind('click', function(event) {
+      console.log('tab click'+JSON.stringify(event.currentTarget));
+      console.log(search);
+      console.log(event);
+
+      /*
+      $.ajax({
+      url: '',
+      sucess: function() {
+
+      },
+      error: function() {
+
+      }
+      */
+    });
+  });
+    </script>
+}
+

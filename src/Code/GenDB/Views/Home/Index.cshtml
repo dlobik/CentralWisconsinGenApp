@@ -52,6 +52,7 @@
 </div>
 <br />
 
+@*Need to move this when we get a chance into CSS file*@
 <style type="text/css">
     .editor-label, .display-label {
         clear: both;
@@ -109,41 +110,6 @@
 
 
 
-
-
-
-
-
-
-
-
-    @**//implementing search options*
-        <br />
-        <br />
-        <b> Search Option: </b>
-        <br />
-        <br />
-        <text> Last Name: </text> @Html.TextBox("lname")
-        <br />
-        <text> Alt Name: </text> @Html.TextBox("altname")
-        <br />
-        <text> First Name: </text> @Html.TextBox("fname")
-        <br />
-        *//Hard coded drop down list for display only, need to pull counties directly from DB*
-        <text> County: </text> @Html.DropDownList("county", new List<SelectListItem>
-
-                     {
-                        new SelectListItem{ Text="Portage", Value = "Portage" },
-                        new SelectListItem{ Text="Milwaukee", Value = "Milwaukee" },
-                        new SelectListItem{ Text="Marathon", Value = "Marathon" },
-                        new SelectListItem{ Text="Onieda", Value = "Onieda" }
-                     })
-        <br />
-        <text> Year of Event: </text> @Html.TextBox("year")
-        <br />
-        <text> Date of Obituary Publication: </text> @Html.TextBox("dateofpub")
-        <br />
-        <button type="button" onclick="location.href='@Url.Action("About", "Home")'"> </button>*@
 
 
 
