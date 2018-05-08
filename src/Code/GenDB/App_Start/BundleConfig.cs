@@ -32,6 +32,17 @@ namespace GenDB
 
 
 
+            //Data tables implementation
+            bundles.Add(new ScriptBundle("~/bundles/dataTables").Include(
+              "~/Scripts/DataTables/jquery.dataTables.js",
+              "~/Scripts/DataTables/dataTables.bootstrap.js"));
+
+            bundles.Add(new StyleBundle("~/Content/dataTables").Include(
+                      "~/Content/DataTables/css/jquery.dataTables.css",
+                      "~/Content/DataTables/css/jquery.dataTables.min.css"));
+
+
+
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
               "~/Content/themes/base/jquery.ui.core.css",
               "~/Content/themes/base/jquery.ui.resizable.css",
