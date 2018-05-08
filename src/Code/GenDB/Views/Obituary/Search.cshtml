@@ -64,6 +64,9 @@
             @Html.DisplayNameFor(model => model.Age)
         </th>
         <th>
+            @Html.DisplayNameFor(model => model.CountyID)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.WebText)
         </th>
         <th></th>
@@ -90,6 +93,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CountyID)
             </td>
             <td>           
                 <button type="button" class="anchorWebtext" data-id="@item.ID">Web Text</button>

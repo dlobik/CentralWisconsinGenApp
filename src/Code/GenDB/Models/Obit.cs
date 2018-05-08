@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -27,7 +28,9 @@ namespace GenDB.Models
         public string WebText { get; set; }
         public virtual ICollection<Obit> Obits { get; set; }
         public virtual News NewsID { get; set; }
-        public virtual County CountyID { get; set; }
+        [DisplayName("County")]
+        public int CountyID { get; set; }
+        [ForeignKey("CountyID")]public virtual County GenDB1 { get; set; }
         public List<Naturalization> MyNat { get; set; }
     }
 }
