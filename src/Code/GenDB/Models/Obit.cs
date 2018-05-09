@@ -30,7 +30,7 @@ namespace GenDB.Models
         public virtual News NewsID { get; set; }
         [DisplayName("County")]
         public int CountyID { get; set; }
-        [ForeignKey("CountyID")]public virtual County GenDB1 { get; set; }
+        [ForeignKey("CountyID")]public virtual County Counties { get; set; }
         public List<Naturalization> MyNat { get; set; }
     }
 }

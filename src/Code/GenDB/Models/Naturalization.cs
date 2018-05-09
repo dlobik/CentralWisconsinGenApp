@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -34,7 +35,9 @@ namespace GenDB.Models
         public string DateOfEntry { get; set; }
         [DisplayName("Port of Entry")]
         public string PortOfEntry { get; set; }
-        public virtual County CountyID { get; set; }
+        [DisplayName("County")]
+        public int CountyID { get; set; }
+        [ForeignKey("CountyID")] public virtual County Counties { get; set; }
 
     }
 }
