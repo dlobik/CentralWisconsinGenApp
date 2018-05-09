@@ -29,6 +29,9 @@
             @Html.DisplayNameFor(model => model.Page)
         </th>
         <th>
+            @Html.DisplayNameFor(model => model.CountyID)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.Town)
         </th>
         <th></th>
@@ -51,6 +54,9 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Page)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Counties.Name)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Town)
