@@ -12,7 +12,7 @@ namespace GenDB.Business.Repository.Sample
     public CensusSampleRepository()
     {
       _models = new List<Census>() {
-        new Census { ID = 1, FirstName = "Hello", LastName = "milly", Age = 10, DateOfRecord = DateTime.Parse("2011-09-05"), Page = "3", Town = "jackson", CountyID=1, },
+        new Census { ID = 1, FirstName = "Hello", LastName = "milly", Age = 10, DateOfRecord = DateTime.Parse("2011-09-05"), Page = "3", Town = "jackson", CountyID=1,},
         new Census { ID = 2, FirstName = "Bye", LastName = "dan", Age = 10, DateOfRecord = DateTime.Parse("2009-09-05"), Page = "3", Town = "milwaukee", CountyID=2,},
         new Census { ID = 3, FirstName = "mother", LastName = "shut", Age = 10, DateOfRecord = DateTime.Parse("2008-09-05"), Page = "3", Town = "madison", CountyID=3,},
         new Census { ID = 4, FirstName = "Father", LastName = "the", Age = 10, DateOfRecord = DateTime.Parse("2007-09-05"), Page = "3", Town = "blah blah", CountyID=4,},
