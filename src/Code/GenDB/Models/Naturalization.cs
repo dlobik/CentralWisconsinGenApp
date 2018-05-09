@@ -22,7 +22,7 @@ namespace GenDB.Models
         public DateTime DateOfRecord { get; set; }
         [DisplayName("Record Type")]
         public string RecordType { get; set; }
-        [DisplayName("County of Origin")]
+        [DisplayName("Country of Origin")]
         public string CountryOfOrigin { get; set; }
         [DisplayName("Series: ")]
         public int Series { get; set; }
