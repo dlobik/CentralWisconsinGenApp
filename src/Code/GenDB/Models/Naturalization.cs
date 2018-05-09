@@ -24,12 +24,15 @@ namespace GenDB.Models
         public string RecordType { get; set; }
         [DisplayName("County of Origin")]
         public string CountryOfOrigin { get; set; }
+        [DisplayName("Series: ")]
         public int Series { get; set; }
+        [DisplayName("Box: ")]
         public int Box { get; set; }
+        [DisplayName("Folder: ")]
         public int Folder { get; set; }
-        [DisplayName("Volume Number")]
+        [DisplayName("Volume: ")]
         public string VolNumber { get; set; }
-        [DisplayName("Page Cert Number")]
+        [DisplayName("Page Certification: ")]
         public string PageCertNumber { get; set; }
         [DisplayName("Date of Entry")]
         public string DateOfEntry { get; set; }
