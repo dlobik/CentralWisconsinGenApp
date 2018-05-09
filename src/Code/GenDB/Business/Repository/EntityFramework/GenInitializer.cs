@@ -27,7 +27,13 @@ namespace GenDB.Business.Repository.EntityFramework
         context.County.Add(county);
       }
 
-      context.SaveChanges();
+      var censusMemberRepository = new CensusMemberSampleRepository();
+      foreach (var censusMember in censusMemberRepository.All())
+      {
+        context.CensusMember.Add(censusMember);
+      }
+
+            context.SaveChanges();
     }
   }
 }

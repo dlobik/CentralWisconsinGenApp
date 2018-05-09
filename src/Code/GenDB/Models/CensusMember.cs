@@ -15,7 +15,6 @@ namespace GenDB.Models
         public string LastName { get; set; }
         public int Age { get; set; }
         public string Page { get; set; }
-        public virtual Census CensusID { get; set; }
 
     }
 }

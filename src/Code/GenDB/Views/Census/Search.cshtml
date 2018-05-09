@@ -10,7 +10,7 @@
 <br />
 
 
-<table id ="table_cen" class="table table-striped table-bordered" style="width:100%">
+<table id ="table_cen" class="table table-striped table-bordered responsive" style="width:100%">
 <thead>
     <tr>
         <th>
@@ -33,6 +33,18 @@
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Town)
+        </th>
+        <th class="none">
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th class="none">
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th class="none">
+            @Html.DisplayNameFor(model => model.Age)
+        </th>
+        <th class="none">
+            @Html.DisplayNameFor(model => model.Page)
         </th>
         <th></th>
     </tr>
@@ -60,6 +72,18 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Town)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Members.LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Members.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Members.Age)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Members.Page)
         </td>
         <td>
             @using (Html.BeginForm("Details", "Obituary", FormMethod.Get))
