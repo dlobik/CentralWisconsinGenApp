@@ -14,8 +14,8 @@ namespace GenDB.Business.Repository.Sample
         new County() { ID = 1, Name="Portage"},
         new County() { ID = 2,Name="Shawano"},
         new County() { ID = 3,Name="Marathon"},
-        new County() { ID = 4, Name="Milwaukee"},
-        new County() { ID = 5, Name="Stevens Point"}
+        new County() { ID = 4, Name="Waupaca"},
+        new County() { ID = 5, Name="Wood"}
       };
     }
 
