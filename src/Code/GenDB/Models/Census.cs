@@ -8,7 +8,7 @@ using System.Web;
 
 namespace GenDB.Models
 {
-    public class Census: Model
+    public class Census : Model
     {
         public int ID { get; set; }
         [DisplayName("First Name")]
@@ -27,7 +27,16 @@ namespace GenDB.Models
         [DisplayName("County")]
         public int CountyID { get; set; }
         [ForeignKey("CountyID")] public virtual County Counties { get; set; }
-
+        public int CensusMemberID { get; set; }
+        [ForeignKey("CensusMemberID")] public virtual County Members { get; set; }
+        [DisplayName("Last Name")]
+        public string LNMem { get; set; }
+        [DisplayName("First Name")]
+        public string FNMem { get; set; }
+        [DisplayName("Age")]
+        public string AgeMem { get; set; }
+        [DisplayName("Page")]
+        public string PageMem { get; set; }
 
 
     }
