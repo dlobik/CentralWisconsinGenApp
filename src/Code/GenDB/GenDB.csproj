@@ -171,8 +171,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Business\Repository\EntityFramework\CensusMemberEntityFrameworkRepository.cs" />
     <Compile Include="Business\Repository\EntityFramework\CountyEntityFrameworkRepository.cs" />
+    <Compile Include="Business\Repository\ICensusMemberRepository.cs" />
+    <Compile Include="Business\Repository\Sample\CensusMemberSampleRepository.cs" />
     <Compile Include="Controllers\CensusController.cs" />
+    <Compile Include="Controllers\CensusMembersController.cs" />
     <Compile Include="Controllers\CountyController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NaturalizationController.cs" />
@@ -553,6 +557,11 @@
     <Content Include="Views\Obituary\oldsearch.cshtml" />
     <Content Include="Views\Naturalization\Search.cshtml" />
     <Content Include="Views\Census\Search.cshtml" />
+    <Content Include="Views\CensusMembers\Create.cshtml" />
+    <Content Include="Views\CensusMembers\Delete.cshtml" />
+    <Content Include="Views\CensusMembers\Details.cshtml" />
+    <Content Include="Views\CensusMembers\Edit.cshtml" />
+    <Content Include="Views\CensusMembers\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

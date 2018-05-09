@@ -30,12 +30,21 @@ namespace GenDB.Business.Repository
 #endif
     }
 
-    public static ICountyRepository CreateCountyRepository()
+    public static ICensusMemberRepository CreateCensusMemberRepository()
+    {
+#if ENTITYFRAMEWORK
+      return (new CensusMemberEntityFrameworkRepository(new GenContext()));
+#else
+      return (new ObituarySampleRepository());
+#endif
+    }
+
+        public static ICountyRepository CreateCountyRepository()
     {
 #if ENTITYFRAMEWORK
       return (new CountyEntityFrameworkRepository(new GenContext()));
 #else
-      return (new ObituarySampleRepository());
+      return (new CountySampleRepository());
 #endif
     }
     }
