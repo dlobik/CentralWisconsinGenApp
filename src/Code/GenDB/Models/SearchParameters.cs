@@ -16,7 +16,7 @@ namespace GenDB.Models
         public string AltName { get; set; }
         [DataType(DataType.Date)]
         [DisplayName("Event Year:  ")]
-        public int? EventYear { get; set; }
+        public int EventYear { get; set; }
         [DisplayName("County:  ")]
         public string County { get; set; }
         public IEnumerable<SelectListItem> Counties { get; set; }
