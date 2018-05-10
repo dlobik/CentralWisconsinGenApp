@@ -24,7 +24,7 @@ namespace GenDB.Models
         public string BirthDate { get; set; }
         [DisplayName("Age")]
         public int Age { get; set; }
-        [DisplayName("Web Text")]
+        [DisplayName("Web Text: ")]
         public string WebText { get; set; }
         public virtual ICollection<Obit> Obits { get; set; }
         public virtual News NewsID { get; set; }

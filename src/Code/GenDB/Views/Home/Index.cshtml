@@ -17,7 +17,6 @@
 <br />
 
 
-@* This should be moved to a separate file, and just called here.*@
 <script type="text/javascript">
     $(function () {
         $('#dialog').dialog({
@@ -43,16 +42,20 @@
         });
     });
 </script>
-<div id="dialog" title="Terms of Service Agreement" style="overflow: scroll;">
-   
-</div>
+
+@* Popup for the TOS Dialog *@
+<div id="dialog" title="Terms of Service Agreement" style="overflow: scroll;"></div>
+
+
 
 <div>
     <p>Please review our <a href="#" id="TOS-link">Terms of Service Agreement</a> prior to use.</p>
 </div>
 <br />
 
-@*Need to move this when we get a chance into CSS file*@
+@*Need to move this when we get a chance into CSS file
+  5/10/18 -- Tried moving to CSS file, unable to get bundled with other CSS
+  Keeping here for now to preserve functionality*@
 <style type="text/css">
     .editor-label, .display-label {
         clear: both;
