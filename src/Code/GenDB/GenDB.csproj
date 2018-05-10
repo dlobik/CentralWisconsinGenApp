@@ -553,7 +553,6 @@
     <Content Include="Views\County\Edit.cshtml" />
     <Content Include="Views\County\Index.cshtml" />
     <Content Include="Views\Shared\_TOSPopUp.cshtml" />
-    <Content Include="Views\Shared\_WTPopUp.cshtml" />
     <Content Include="Views\Obituary\oldsearch.cshtml" />
     <Content Include="Views\Naturalization\Search.cshtml" />
     <Content Include="Views\Census\Search.cshtml" />

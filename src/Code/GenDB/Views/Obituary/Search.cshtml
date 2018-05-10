@@ -6,35 +6,6 @@
 
 @Styles.Render("~/Content/dataTables")
 
-<script type="text/javascript">
-  $(document).ready(function () {
-        $(".anchorWebtext").click(function () {
-            var id = ("#data-id");
-            $(this).dialog({
-                autoOpen: false,
-                width: 400,
-                resizable: false,
-                title: 'Web Text',
-                modal: true,
-                open: function (event, ui) {
-                    $(this).load("@Url.Action("Webtext(id)")").open;
-                },
-                buttons: {
-                "Close": function () {
-                    $(this).dialog("close");
-                }
-            }
-        });
-    //    $('#WT-link').click(function () {
-    //        $('#dialog').dialog('open');
-    //    });
-      });
-    });
-</script>
-<div id="dialog" title="Web Text" style="overflow: hidden;">
-
-</div>
-
 
 
 <h2>Obituaries</h2>
@@ -99,7 +70,7 @@
                 @Html.DisplayFor(modelItem => item.Counties.Name)
             </td>
             <td>           
-                <button type="button" class="anchorWebtext" data-id="@item.ID">Web Text</button>
+                @Html.DisplayFor(modelItem => item.WebText)
             </td>
             <td>
                 @using (Html.BeginForm("Details", "Obituary", FormMethod.Get))
