@@ -206,7 +206,6 @@
     <Compile Include="Models\Naturalization.cs" />
     <Compile Include="Models\News.cs" />
     <Compile Include="Models\Obit.cs" />
-    <Compile Include="Models\SearchContainerModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\SearchParameters.cs" />
   </ItemGroup>

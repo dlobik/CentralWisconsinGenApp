@@ -6,36 +6,6 @@
 
 @Styles.Render("~/Content/dataTables")
 
-<script type="text/javascript">
-  $(document).ready(function () {
-        $(".anchorWebtext").click(function () {
-            var id = ("#data-id");
-            $(this).dialog({
-                autoOpen: false,
-                width: 400,
-                resizable: false,
-                title: 'Web Text',
-                modal: true,
-                open: function (event, ui) {
-                    $(this).load("@Url.Action("Webtext(id)")").open;
-                },
-                buttons: {
-                "Close": function () {
-                    $(this).dialog("close");
-                }
-            }
-        });
-    //    $('#WT-link').click(function () {
-    //        $('#dialog').dialog('open');
-    //    });
-      });
-    });
-</script>
-<div id="dialog" title="Web Text" style="overflow: hidden;">
-
-</div>
-
-
 
 <h2>Obituaries</h2>
 
@@ -43,73 +13,73 @@
 <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
 
 
-<table id="table_id" class="table table-striped table-bordered" style="width:100%">
-  <thead>  
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.FirstName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.LastName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AltName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.DateOfRecord)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.BirthDate)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Age)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CountyID)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.WebText)
-        </th>
-        <th></th>
-    </tr>
-</thead>
-<tbody>
-    @foreach (var item in Model)
-    {
+<table id="table_id" class="table table-striped table-bordered responsive" style="width:100%">
+    <thead>
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.FirstName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.LastName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AltName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateOfRecord)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.BirthDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Age)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Counties.Name)
-            </td>
-            <td>           
-                <button type="button" class="anchorWebtext" data-id="@item.ID">Web Text</button>
-            </td>
-            <td>
-                @using (Html.BeginForm("Details", "Obituary", FormMethod.Get))
-                {
-                    <button type="submit">Add to Cart</button>
-                }
-            </td>
+            <th class="all">
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th class="all">
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th class="all">
+                @Html.DisplayNameFor(model => model.AltName)
+            </th>
+            <th class="all">
+                @Html.DisplayNameFor(model => model.DateOfRecord)
+            </th>
+            <th class="all">
+                @Html.DisplayNameFor(model => model.BirthDate)
+            </th>
+            <th class="all">
+                @Html.DisplayNameFor(model => model.Age)
+            </th>
+            <th class="all">
+                @Html.DisplayNameFor(model => model.CountyID)
+            </th>
+            <th class="none">
+                @Html.DisplayNameFor(model => model.WebText)
+            </th>
+            <th></th>
         </tr>
-    }
-</tbody>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AltName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateOfRecord)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BirthDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Age)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Counties.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WebText)
+                </td>
+                <td>
+                    @using (Html.BeginForm("Details", "Obituary", FormMethod.Get))
+                {
+                        <button type="submit">Add to Cart</button>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
 </table>
 
 @section scripts {
@@ -118,9 +88,14 @@
 
     <script type="text/javascript">
 
+
         $(document).ready(function () {
-            $('#table_id').DataTable();
-        });
+            $('#table_id').dataTable({
+                "language": {
+                    "search": "Filter:"
+                }
+            });
+        })
 
     </script>
 }

@@ -5,41 +5,30 @@
 <script src="@Url.Content("~/Scripts/jquery-ui-1.8.24.min.js")" type="text/javascript"></script>
 
 
-@*<script>
-   $(document).ready(function () {
-      $.ajax({
-         type: "GET",
-         url: '@Html.Url("Search", "Naturalization")',
-         dataType: "html",
-         data: {  },
-
-         success: function (content) {
-            $("#accountInfo").html(content);
-         },
-         error: function (e) { }
-      });
-   });
-</script>*@
 <br />
 <div id="tabs">
-  <ul>
-    <li><a href="#tabs-1">Obituaries</a></li>
-    <li><a href="#tabs-2">Naturalizations</a></li>
-    <li><a href="#tabs-3">Censuses</a></li>
-  </ul>
+    <ul>
+        <li><a href="#tabs-1">Obituaries</a></li>
+        <li><a href="#tabs-2">Naturalizations</a></li>
+        <li><a href="#tabs-3">Censuses</a></li>
+    </ul>
 
-  <div id="tabs-1">
-    @Html.Action("Search", "Obituary", new RouteValueDictionary() { { "parameters", Model } })
-  </div>
+    <div id="tabs-1">
+        @Html.Action("Search", "Obituary", new RouteValueDictionary() { { "parameters", Model } })
+    </div>
 
-  <div id="tabs-2">      
-    @Html.Action("Search", "Naturalization", new RouteValueDictionary() { { "parameters", Model } })
-  </div>
+    <div id="tabs-2">
+        @Html.Action("Search", "Naturalization", new RouteValueDictionary() { { "parameters", Model } })
+    </div>
 
-  <div id="tabs-3">
-      @Html.Action("Search", "Census", new RouteValueDictionary() { { "parameters", Model } })
-  </div>
+    <div id="tabs-3">
+        @Html.Action("Search", "Census", new RouteValueDictionary() { { "parameters", Model } })
+    </div>
 </div>
+
+
+
+
 
 
 @section scripts {

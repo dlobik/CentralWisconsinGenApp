@@ -12,15 +12,15 @@ namespace GenDB.Business.Repository.Sample
     public CensusMemberSampleRepository()
     {
       _models = new List<CensusMember>() {
-        new CensusMember { ID = 10, FirstName = "what", LastName = "yaaaaeeee", Age = 11, Page = "24B",},
-        new CensusMember { ID = 20, FirstName = "you", LastName = "thisisfun", Age = 100, Page = "123",},
-        new CensusMember { ID = 30, FirstName = "chicken", LastName = "sandwich", Age = 2, Page = "11B",},
-        new CensusMember { ID = 40, FirstName = "egg", LastName = "chicken", Age = 5, Page = "11A",},
-        new CensusMember { ID = 50, FirstName = "cow", LastName = "yummy", Age = 70, Page = "123",},
-        new CensusMember { ID = 60, FirstName = "milk", LastName = "pizzaslice", Age = 20, Page = "66",},
-        new CensusMember { ID = 70, FirstName = "goat", LastName = "baby", Age = 16, Page = "501",},
-        new CensusMember { ID = 80, FirstName = "sheep", LastName = "waterbottle", Age = 1, Page = "AB2",},
-        new CensusMember { ID = 90, FirstName = "monster", LastName = "energy", Age = 55, Page = "213",},
+        new CensusMember { ID = 10, FirstName = "Charles", LastName = "Smith", Age = 11, Page = "24B",},
+        new CensusMember { ID = 20, FirstName = "Samuel", LastName = "Brown", Age = 100, Page = "123",},
+        new CensusMember { ID = 30, FirstName = "Tyler", LastName = "Miller", Age = 2, Page = "11B",},
+        new CensusMember { ID = 40, FirstName = "Henry", LastName = "Johnson", Age = 5, Page = "11A",},
+        new CensusMember { ID = 50, FirstName = "George", LastName = "Jones", Age = 70, Page = "123",},
+        new CensusMember { ID = 60, FirstName = "Sarah", LastName = "Davis", Age = 20, Page = "66",},
+        new CensusMember { ID = 70, FirstName = "Elizabeth", LastName = "Williams", Age = 16, Page = "501",},
+        new CensusMember { ID = 80, FirstName = "Mary", LastName = "Wilson", Age = 1, Page = "AB2",},
+        new CensusMember { ID = 90, FirstName = "Taylor", LastName = "Clark", Age = 55, Page = "213",},
       };
     }
 
