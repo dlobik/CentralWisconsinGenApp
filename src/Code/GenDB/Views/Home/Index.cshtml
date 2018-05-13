@@ -54,8 +54,8 @@
 <br />
 
 @*Need to move this when we get a chance into CSS file
-  5/10/18 -- Tried moving to CSS file, unable to get bundled with other CSS
-  Keeping here for now to preserve functionality*@
+    5/10/18 -- Tried moving to CSS file, unable to get bundled with other CSS
+    Keeping here for now to preserve functionality*@
 <style type="text/css">
     .editor-label, .display-label {
         clear: both;
@@ -91,21 +91,18 @@
         </div>
         <br />
         <div>
-        @Html.LabelFor(m => m.EventYear, htmlAttributes: new { @class = "editor-label" })
-        @Html.TextBoxFor(m => m.EventYear, htmlAttributes: new { @class = "editor-field" , @type = "number"})
+            @Html.LabelFor(m => m.EventYear, htmlAttributes: new { @class = "editor-label" })
+            @Html.TextBoxFor(m => m.EventYear, htmlAttributes: new { @class = "editor-field", @type = "number" })
         </div>
         <br />
         <div>
-        @Html.LabelFor(m => m.County, htmlAttributes: new { @class = "editor-label" })
-        @Html.DropDownListFor(m => m.County, ViewBag.Counties as IEnumerable<SelectListItem>, "- Select County -", htmlAttributes: new { @class = "editor-field" })
-            
-            
-            @*@Html.TextBoxFor(m => m.County, htmlAttributes: new { @class = "editor-field" })*@
+            @Html.LabelFor(m => m.County, htmlAttributes: new { @class = "editor-label" })
+            @Html.DropDownListFor(m => m.County, ViewBag.Counties as IEnumerable<SelectListItem>, "- Select County -", htmlAttributes: new { @class = "editor-field" })
         </div>
         <br />
         <div>
-        <button type="reset">Clear All Fields</button>
-        <button type="submit">Search</button>
+            <button type="reset">Clear All Fields</button>
+            <button type="submit">Search</button>
         </div>
     }
 
